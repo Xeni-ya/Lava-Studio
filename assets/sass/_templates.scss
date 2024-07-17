@@ -1,0 +1,147 @@
+// ================ОБЩИЕ СТИЛИ=================//
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+
+  font-size: 62.5%; //10px
+}
+
+body {
+  height: 100%;
+
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $dark;
+}
+
+a {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+//==================Заголовки====================//
+.page-title {
+  margin: auto;
+  margin-top: 16px;
+  font-size: 6.4em;
+  font-weight: 500;
+  line-height: 75px;
+  letter-spacing: -2.56px;
+  color: $white;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1024px) {
+    line-height: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 5.4em;
+    line-height: 64px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 4em;
+    line-height: 44px;
+  }
+}
+
+.title {
+  font-size: 4.8em;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4em;
+    line-height: 44px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 2.4em;
+    line-height: 28px;
+  }
+}
+
+.subtitle {
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.8em;
+    line-height: 32px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 2.4em;
+    line-height: 28px;
+  }
+}
+//================Конец Заголовки==================//
+
+//===================Навигация=====================//
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 18px;
+
+  list-style: none;
+
+  .nav-items__link {
+    font-size: 1.4em;
+  }
+}
+//===============Конец Навигация==================//
+
+//====================Логотип=====================//
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: 118px;
+  height: 18px;
+
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+
+  .logo__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .logo__icon_green {
+    fill: $dark-green;
+  }
+}
+//==================Конец Логотип==================//
+
+//================КОНЕЦ ОБЩИЕ СТИЛИ================//
+
+//Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
+%container {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
+}

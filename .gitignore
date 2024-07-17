@@ -1,4 +1,2 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+assets/styles/style.css
+assets/styles/style.css.map
