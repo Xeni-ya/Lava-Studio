@@ -14,7 +14,8 @@ html {
 
 body {
   height: 100%;
-  background-color: $DeepPurple;
+  background: rgb(56,10,77);
+  background: linear-gradient(194deg, rgba(56,10,77,1) 78%, rgba(103,44,108,1) 88%, rgba(129,34,136,1) 91%, rgba(255,220,18,1) 100%);
 
   font-family: "Poiret One", sans-serif;
   font-style: normal;
@@ -125,10 +126,6 @@ a {
   .logo__icon {
     width: 16px;
     height: 16px;
-  }
-
-  .logo__icon_green {
-    fill: $dark-green;
   }
 }
 //==================Конец Логотип==================//
