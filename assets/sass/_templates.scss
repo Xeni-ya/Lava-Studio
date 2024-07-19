@@ -14,8 +14,8 @@ html {
 
 body {
   height: 100%;
-  background: rgb(56,10,77);
-  background: linear-gradient(194deg, rgba(56,10,77,1) 78%, rgba(103,44,108,1) 88%, rgba(129,34,136,1) 91%, rgba(255,220,18,1) 100%);
+  
+  background: linear-gradient(251deg, rgba(56,10,77,1) 74%, rgba(103,44,108,1) 97%, rgba(129,34,136,1) 100%);
 
   font-family: "Poiret One", sans-serif;
   font-style: normal;
@@ -34,12 +34,11 @@ a {
 .page-title {
   margin: auto;
   margin-top: 16px;
-  font-size: 6.4em;
-  font-weight: 500;
+  font-size: 6em;
+  font-weight: 400;
   line-height: 75px;
   letter-spacing: -2.56px;
-  color: $white;
-  text-transform: uppercase;
+  color: $yellow;
 
   @media screen and (max-width: 1024px) {
     line-height: 70px;
@@ -57,11 +56,10 @@ a {
 }
 
 .title {
-  font-size: 4.8em;
-  font-weight: 500;
+  font-size: 4.6em;
+  font-weight: 400;
   line-height: 50px;
   letter-spacing: -1.92px;
-  text-transform: uppercase;
 
   @media screen and (max-width: 768px) {
     font-size: 4em;
@@ -75,11 +73,10 @@ a {
 }
 
 .subtitle {
-  font-size: 4em;
-  font-weight: 500;
+  font-size: 3.6em;
+  font-weight: 400;
   line-height: 44px;
   letter-spacing: -1.6px;
-  text-transform: uppercase;
 
   @media screen and (max-width: 768px) {
     font-size: 2.8em;
@@ -104,29 +101,18 @@ a {
   list-style: none;
 
   .nav-items__link {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
 }
 //===============Конец Навигация==================//
 
 //====================Логотип=====================//
-.logo {
+.logo__icon  {
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
-  width: 118px;
-  height: 18px;
-
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: -0.56px;
-  font-size: 1.4em;
-  text-transform: uppercase;
-
-  .logo__icon {
-    width: 16px;
-    height: 16px;
-  }
+  width: 224px;
+  height: 208px;
 }
 //==================Конец Логотип==================//
 

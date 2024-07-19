@@ -1,1 +1,32 @@
+.section-link {
+  @extend %container;
 
+  margin-top: 15%;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin: 0 2px;
+    font-size: 1.7em;
+    font-family: "Poiret One", sans-serif;
+    transition: .3s ease-in-out;
+  }
+
+    .section-link__fi, 
+    .section-link__ru, 
+    .section-link__en {
+      color: $white;
+      border: 2px solid transparent;
+      text-transform: uppercase;
+    }
+
+    .section-link__fi:hover, 
+    .section-link__ru:hover, 
+    .section-link__en:hover {
+      color: $yellow;
+      border: 2px solid $yellow;
+    }
+}
