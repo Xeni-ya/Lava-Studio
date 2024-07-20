@@ -1,10 +1,10 @@
 // "  sass --watch assets/sass/index.scss assets/styles/style.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-.footer__div {
-  background: linear-gradient(251deg, rgba(56,10,77,1) 74%, rgba(103,44,108,1) 97%, rgba(129,34,136,1) 100%);
+.footer__div { 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
   max-height: 150px;
@@ -12,17 +12,19 @@
   font-style: normal;
   font-weight: 400;
   color: $white;
+  padding: 20px;
 }
 .footer__logo {
-  max-width: 116px;
+  max-width: 130px;
 
 }
 .footer__adress {
+  font-size: 2.3rem;
   color: $yellow;
 }
 .footer__insta {
-  color: $yellow;
+  padding: 10px;
 }
 .footer__facebook {
-  color: $yellow;
+  padding: 10px;
 }
