@@ -1,2 +1,9 @@
-// "  sass --watch assets/sass/rules.scss assets/styles/rules.css  "
+// "  sass --watch assets/sass/rules.scss assets/styles/style-rules.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+
+.section-rules {
+  .title {
+  }
+  .section-rules__title {
+  }
+}

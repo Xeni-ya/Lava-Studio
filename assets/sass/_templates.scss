@@ -14,8 +14,8 @@ html {
 
 body {
   height: 100%;
-  
-  background: linear-gradient(251deg, rgba(56,10,77,1) 74%, rgba(103,44,108,1) 97%, rgba(129,34,136,1) 100%);
+  background: $deepPurple;
+  // background: linear-gradient(251deg, rgba(56,10,77,1) 74%, rgba(103,44,108,1) 97%, rgba(129,34,136,1) 100%);
 
   font-family: "Poiret One", sans-serif;
   font-style: normal;
@@ -34,7 +34,7 @@ a {
 .page-title {
   margin: auto;
   margin-top: 16px;
-  font-size: 6em;
+  font-size: 6.4em;
   font-weight: 400;
   line-height: 75px;
   letter-spacing: -2.56px;
