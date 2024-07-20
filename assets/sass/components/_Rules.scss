@@ -2,8 +2,26 @@
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
 
 .section-rules {
-  .title {
-  }
+  background-color: $deepPurple;
+}
   .section-rules__title {
+    font-family: "Poiret One", sans-serif;
+    color: $yellow;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+  justify-content: center;
+  text-align: center;
   }
+
+.rules_text {
+  font-family: "Poiret One", sans-serif;
+  color: $yellow;
+  font-size: 20px;
+    font-weight: 300;
+    display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-left: 113px;
+  margin-right: 113px;
 }
