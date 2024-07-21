@@ -1,31 +1,454 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../icons/favicon.svg" type="image/svg" />
-  <link rel="stylesheet" href="../styles/style-schedule.css" />
-  <title>Расписание</title>
-</head>
-<body>
-  <!-- HEADER Анна -->
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../icons/favicon.svg" type="image/svg" />
+    <link rel="stylesheet" href="../styles/style-schedule.css" />
+    <title>Расписание</title>
+  </head>
 
-  </header>
-  <!-- КОНЕЦ HEADER Анна -->
-  
-  <main>
-    <!-- СЕКЦИЯ “Расписание” Елена -->
-    <section class="section-schedule">
+  <body>
+    <!-- HEADER Анна -->
+    <header class="header">
+      <div>
+        <a href="index.html"><img class="header__logo" /></a>
+        <menu>
+          <ul>
+            <li>Home</li>
+            <li>Курсы</li>
+            <li>Расписание</li>
+            <li>Прайс</li>
+            <li>Правила</li>
+            <li>Галерея</li>
+            <li>Правила</li>
+            <li>Контакты</li>
+          </ul>
+        </menu>
+      </div>
+    </header>
+    <!-- КОНЕЦ HEADER Анна -->
 
-    </section>
-    <!-- КОНЕЦ СЕКЦИИ “Расписание” Елена -->
-  </main>
+    <main>
+      <!-- СЕКЦИЯ “Расписание” Елена -->
+      <section class="section-schedule">
+        <h1 class="section-schedule__h1">Расписание</h1>
+        <div class="section-schedule__calendar">
+          <!-- расписание в 1 блок без переносов -->
+          <div class="section-schedule__calendar-timeline">
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+          </div>
+          <!-- расписание в 2 блока с переносом -->
+          <div class="section-schedule__calendar-timeline2">
+            <!-- 1 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+            <!-- 2 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+          </div>
+          <!-- расписание в 3 блока с переносом -->
+          <div class="section-schedule__calendar-timeline3">
+            <!-- 1 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+            <!-- 2 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+            <!-- 3 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+          </div>
+          <!-- расписание в 6 блоков с переносом -->
+          <div class="section-schedule__calendar-timeline4">
+            <!--1 строка  -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+            <!-- 2 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+            <!-- 3 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+            <!-- 4 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+            <!-- 5 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+            <!-- 6 строка -->
+            <div class="spacer"></div>
+            <div class="time-marker">9:00</div>
+            <div class="time-marker">10:00</div>
+            <div class="time-marker">11:00</div>
+            <div class="time-marker">12:00</div>
+            <div class="time-marker">13:00</div>
+            <div class="time-marker">14:00</div>
+            <div class="time-marker">15:00</div>
+            <div class="time-marker">16:00</div>
+            <div class="time-marker">17:00</div>
+            <div class="time-marker">18:00</div>
+            <div class="time-marker">19:00</div>
+            <div class="time-marker">20:00</div>
+          </div>
+          <div class="section-schedule__calendar-days">
+            <div class="day mon">
+              <div class="date">
+                <p class="date-day">Понедельник</p>
+              </div>
+              <div class="events">
+                <div class="event start-1 end-1 securities"></div>
+                <div class="event start-2 end-2 securities"></div>
+                <div class="event start-3 end-3 securities"></div>
+                <div class="event start-4 end-4 securities"></div>
+                <div class="event start-5 end-5 securities"></div>
+                <div class="event start-6 end-6 securities"></div>
+                <div class="event start-7 end-7 securities"></div>
+                <div class="event start-8 end-8 securities"></div>
+                <div class="event start-9 end-9 securities">
+                  <div class="event__block-mini">
+                    <p class="title">Miniband (7-12 лет)</p>
+                  </div>
+                  <div class="event__block-handm">
+                    <p class="title">Печворк и мягкая игрушка (13-17 лет)</p>
+                  </div>
+                </div>
+                <div class="event start-10 end-10 securities">
+                  <div class="event__block-hip">
+                    <p class="title">Хип-хоп и современный танец (13-17 лет)</p>
+                  </div>
+                </div>
+                <div class="event start-11 end-11 securities">
+                  <div class="event__block-belly">
+                    <p class="title">Belly dance 1,5 часа (взрослые)</p>
+                  </div>
+                </div>
+                <div class="event start-12 end-12 securities"></div>
+              </div>
+            </div>
+            <div class="day tues">
+              <div class="date">
+                <p class="date-day">Вторник</p>
+              </div>
+              <div class="events">
+                <div class="event start-1 end-1 securities"></div>
+                <div class="event start-2 end-2 securities"></div>
+                <div class="event start-3 end-3 securities"></div>
+                <div class="event start-4 end-4 securities"></div>
+                <div class="event start-5 end-5 securities"></div>
+                <div class="event start-6 end-6 securities"></div>
+                <div class="event start-7 end-7 securities"></div>
+                <div class="event start-8 end-8 securities"></div>
+                <div class="event start-9 end-9 securities">
+                  <div class="event__block-voice">
+                    <p class="title">Вокал (4-6 лет)</p>
+                  </div>
+                  <div class="event__block-anime">
+                    <p class="title">Коллаж и анимация (7-12 лет)</p>
+                  </div>
+                </div>
+                <div class="event start-10 end-10 securities">
+                  <div class="event__block-voice">
+                    <p class="title">Вокал (7-12 лет)</p>
+                  </div>
+                  <div class="event__block-handm">
+                    <p class="title">Поделки и коллаж (4-6 лет)</p>
+                  </div>
+                </div>
+                <div class="event start-11 end-11 securities">
+                  <div class="event__block-belly">
+                    <p class="title">Belly dance 55 минут (взрослые)</p>
+                  </div>
+                </div>
+                <div class="event start-12 end-12 securities">
+                  <div class="event__block-voice">
+                    <p class="title">Вокал (взрослые)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day wed">
+              <div class="date">
+                <p class="date-day">Среда</p>
+              </div>
+              <div class="events">
+                <div class="event start-1 end-1 securities"></div>
+                <div class="event start-2 end-2 securities"></div>
+                <div class="event start-3 end-3 securities"></div>
+                <div class="event start-4 end-4 securities"></div>
+                <div class="event start-5 end-5 securities"></div>
+                <div class="event start-6 end-6 securities"></div>
+                <div class="event start-7 end-7 securities"></div>
+                <div class="event start-8 end-8 securities"></div>
+                <div class="event start-9 end-9 securities">
+                  <div class="event__block-teatr">
+                    <p class="title">Театральная студия (7-12 лет)</p>
+                  </div>
+                </div>
+                <div class="event start-10 end-10 securities">
+                  <div class="event__block-voice">
+                    <p class="title">Вокал (13-17 лет)</p>
+                  </div>
+                </div>
+                <div class="event start-11 end-11 securities">
+                  <div class="event__block-latina">
+                    <p class="title">LatinStyle</p>
+                  </div>
+                </div>
+                <div class="event start-12 end-12 securities"></div>
+              </div>
+            </div>
+            <div class="day thurs">
+              <div class="date">
+                <p class="date-day">Четверг</p>
+              </div>
+              <div class="events">
+                <div class="event start-1 end-1 securities"></div>
+                <div class="event start-2 end-2 securities"></div>
+                <div class="event start-3 end-3 securities"></div>
+                <div class="event start-4 end-4 securities"></div>
+                <div class="event start-5 end-5 securities"></div>
+                <div class="event start-6 end-6 securities"></div>
+                <div class="event start-7 end-7 securities"></div>
+                <div class="event start-8 end-8 securities"></div>
+                <div class="event start-9 end-9 securities">
+                  <div class="event__block-dance">
+                    <p class="title">Танцы и ОФП (4-6 лет)</p>
+                  </div>
+                </div>
+                <div class="event start-10 end-10 securities">
+                  <div class="event__block-clasdance">
+                    <p class="title">Современный танец (7-12 лет)</p>
+                  </div>
+                </div>
+                <div class="event start-11 end-11 securities">
+                  <div class="event__block-belly">
+                    <p class="title">Belly dance 1,5 часа (взрослые)</p>
+                  </div>
+                </div>
+                <div class="event start-12 end-12 securities"></div>
+              </div>
+            </div>
+            <div class="day fri">
+              <div class="date">
+                <p class="date-day">Пятница</p>
+              </div>
+              <div class="events">
+                <div class="event start-1 end-1 securities"></div>
+                <div class="event start-2 end-2 securities"></div>
+                <div class="event start-3 end-3 securities"></div>
+                <div class="event start-4 end-4 securities"></div>
+                <div class="event start-5 end-5 securities"></div>
+                <div class="event start-6 end-6 securities"></div>
+                <div class="event start-7 end-7 securities"></div>
+                <div class="event start-8 end-8 securities"></div>
+                <div class="event start-9 end-9 securities"></div>
+                <div class="event start-10 end-10 securities">
+                  <div class="event__block-street">
+                    <p class="title">Street-girls (взрослые)</p>
+                  </div>
+                </div>
+                <div class="event start-11 end-11 securities">
+                  <div class="event__block-yoga">
+                    <p class="time">19:30</p>
+                    <p class="title">Йога</p>
+                  </div>
+                </div>
+                <div class="event start-12 end-12 securities"></div>
+              </div>
+            </div>
+            <div class="day sut">
+              <div class="date">
+                <p class="date-day">Суббота</p>
+              </div>
+              <div class="events">
+                <div class="event start-1 end-1 securities">
+                  <div class="event__block-mama">
+                    <p class="time">9:30</p>
+                    <p class="title">Мама и Малыш (1-2 года)</p>
+                  </div>
+                </div>
+                <div class="event start-2 end-2 securities">
+                  <div class="event__block-mama">
+                    <p class="time">10:30</p>
+                    <p class="title">Мама и Малыш (3-4 года)</p>
+                  </div>
+                </div>
+                <div class="event start-3 end-3 securities"></div>
+                <div class="event start-4 end-4 securities"></div>
+                <div class="event start-5 end-5 securities">
+                  <div class="event__block-latina">
+                    <p class="title">LatinStyle (взрослые)</p>
+                  </div>
+                </div>
+                <div class="event start-6 end-6 securities">
+                  <div class="event__block-handm">
+                    <p class="title">Пэтчворк (взрослые)</p>
+                  </div>
+                </div>
+                <div class="event start-7 end-7 securities"></div>
+                <div class="event start-8 end-8 securities"></div>
+                <div class="event start-9 end-9 securities"></div>
+                <div class="event start-10 end-10 securities"></div>
+                <div class="event start-11 end-11 securities"></div>
+                <div class="event start-12 end-12 securities"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- кнопка Зарегистрировася -->
+        <div class="section-schedule__button">
+          <button class="section-schedule__button-btn">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe2yYVfhaNF69-yOilF550VfH1AsvbfxFqZxjIccAJPABvY1w/viewform"
+              target="_blank"
+              >Зарегистрироваться</a
+            >
+          </button>
+        </div>
+      </section>
+      <!-- КОНЕЦ СЕКЦИИ “Расписание” Елена -->
+    </main>
 
-  <!-- FOOTER Анна -->
-  <footer>
-
-  </footer>
-  <!-- КОНЕЦ FOOTER Анна -->
-</body>
+    <!-- FOOTER Анна -->
+    <footer class="footer">
+      <div class="footer__div">
+        <img src="../images/section-hero-logo.png" class="footer__logo" />
+        <div class="footer__adress">Kääntopiiri 2, Espoo</div>
+        <div class="footer__contacts">
+          <a
+            href="https://www.instagram.com/lava_espoo/?igsh=dGVuY2o0aGRwb2R2&utm_source=qr"
+            ><img class="footer__insta" src="../images/instagram.png"
+          /></a>
+          <a
+            href="https://www.facebook.com/people/Lava-dance-music-education/61560395152406/"
+            ><img class="footer__facebook" src="../images/facebook.png"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- КОНЕЦ FOOTER Анна -->
+  </body>
 </html>
