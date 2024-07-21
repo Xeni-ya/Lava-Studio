@@ -25,6 +25,40 @@
 .footer__insta {
   padding: 10px;
 }
-.footer__facebook {
-  padding: 10px;
+
+.footer__insta:hover {
+  color: beige;
 }
+.footer__facebook {
+  transform: rotate(20deg);
+}
+
+.footer__facebook:hover {
+  transform: rotate(20deg);
+}
+.header__logo {
+  max-width: 228px;
+}
+
+.navbar {
+  background-color: #380a4d;
+}
+
+.nav-item {
+  background-color: $yellow-dark;
+  font-family: "Poiret One", sans-serif;
+  font-size: 19px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+  }
+  .nav-item:hover {
+  color: $yellow-dark;
+  background-color: $pink;
+  }
+
+  .container__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
