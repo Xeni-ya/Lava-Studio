@@ -1,92 +1,74 @@
 // "  sass --watch assets/sass/about.scss assets/styles/style-about.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+// * {
+//   outline: deeppink 1px solid;
+// } 
+
 .section-hero {
-  @extend %container;
+@extend %container;
 
-  .section-hero__container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
-    gap: 10px;
-  }
-  .section-hero__img{
-    width: 500px;
-    grid-row: span 3;
-  }
+.section-hero__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 3.2em;
+}
+.section-hero__img {
+  max-width: 389px;
+  width: 100%;
+  grid-row: span 3;
 
-  .page-title.section-hero__title {
-    grid-column: 2;
-    font-size: 6em;
-    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #0B2349;
-    display: table;
-    margin: 20px auto;
-  }
-
-  .section-hero__text {
-    font-size: 3.2em;
-    grid-column: 2;
-  }
-
-  .button.section-hero__button {
-    grid-column: 2;
-    max-width: 509px;
-    height: 79px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px 30px;
-    margin: 30px 0px;
-    position: relative;
-    color: $white;
-    border: 1px solid $grey;
-    background: none;
-    font-size: 3.1em;
-    font-weight: 400;
-    font-family: "Poiret One", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  .button.section-hero__button:before, 
-  .button.section-hero__button:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    box-sizing: border-box;
-  }
-  .button.section-hero__button:before {
-    bottom: 0;
-    left: 0;
-    border-left: 1px solid $yellow;
-    border-top: 1px solid $yellow;
-    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-  }
-  .button.section-hero__button:after {
-    top: 0;
-    right: 0;
-    border-right: 1px solid $yellow;
-    border-bottom: 1px solid $yellow;
-    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
-  }
-  .button.section-hero__button:hover:before, 
-  .button.section-hero__button:hover:after {
-    height: 100%;
+  @media screen and (max-width: 1024px) {
+    max-width: 315px;
     width: 100%;
-    opacity: 1;
   }
-  .button.section-hero__button:hover:before {
-    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+
+  @media screen and (max-width: 425px) {
+    max-width: 377px;
+    width: 100%;
   }
-  .button.section-hero__button:hover:after {
-    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+
+  @media screen and (max-width: 375px) {
+    max-width: 327px;
+    width: 100%;
   }
-  .button.section-hero__button:hover {
-    background: $deepPurple;
-    color: $yellow;
+
+  @media screen and (max-width: 320px) {
+    max-width: 272px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 375px) {
+    max-width: 327px;
+    width: 100%;
   }
 }
 
+.page-title.section-hero__title {
+  grid-column: 2;
+  font-size: 6em;
+  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  width: 100%;
+  height: 136px;
+}
 
+.section-hero__text {
+  font-size: 3.2em;
+  grid-column: 2;
+  margin: 0 1px;
+}
+
+.button.section-hero__button {
+  font-size: 3.1em;
+  max-width: 509px;
+  width: 100%;
+  height: 79px;
+  left: -19px;
+  bottom: 15px;
+}
+}
