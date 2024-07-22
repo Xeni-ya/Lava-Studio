@@ -13,18 +13,78 @@
   font-weight: 400;
   color: $white;
   padding: 20px;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    flex-direction: column;
+  } 
 }
 .footer__logo {
   max-width: 130px;
 
 }
 .footer__adress {
-  font-size: 2.3rem;
+  font-size: 3.5rem;
   color: $yellow;
 }
-.footer__insta {
+.footer__contact {
   padding: 10px;
+  max-width: 70px;
 }
-.footer__facebook {
-  padding: 10px;
+
+.footer__contact:hover {
+  color: beige;
 }
+.footer__contact:hover {
+  transform: rotate(20deg);
+}
+
+.header__div {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  } 
+}
+.header__logo {
+  max-width: 228px;
+}
+
+.navbar {
+  background-color: #380a4d;
+  padding-left: 200px;
+  max-width: 100%;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  } 
+  }
+
+.nav-item {
+  background-color: $yellow-dark;
+  font-family: "Poiret One", sans-serif;
+  font-size: 19px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+  }
+  .nav-item:hover {
+  color: $yellow-dark;
+  background-color: $pink;
+  }
+
+  .container__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      max-width: 50%;
+    } 
+  }
+
+  .navbar-toggler-icon {
+    background-color: rgb(233, 233, 224);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+  }
