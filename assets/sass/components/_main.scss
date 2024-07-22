@@ -1,8 +1,12 @@
 .section-link {
   @extend %container;
 
-  margin-top: 15%;
-  text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 
   a {
     text-decoration: none;
@@ -28,5 +32,9 @@
     .section-link__en:hover {
       color: $yellow;
       border: 2px solid $yellow;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 1.2em;
     }
 }
