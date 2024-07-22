@@ -559,13 +559,13 @@ a {
 }
 
 .footer__adress {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #ffdc12;
 }
 
 .footer__contact {
   padding: 10px;
-  max-width: 70px;
+  max-width: 50px;
 }
 
 .footer__contact:hover {
@@ -576,11 +576,11 @@ a {
   transform: rotate(20deg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 987px) {
   .header__div {
     display: flex;
-    max-width: 100%;
-    flex-direction: row;
+    max-width: 90%;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
   }
@@ -592,22 +592,27 @@ a {
 
 .navbar {
   background-color: #380a4d;
-  padding-left: 200px;
+  padding-left: 70px;
   max-width: 100%;
 }
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 0;
+    background-color: none;
   }
 }
 
 .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #E4B548;
   font-family: "Poiret One", sans-serif;
   font-size: 19px;
   padding: 5px;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 5px;
+  width: 125px;
 }
 
 .nav-item:hover {
@@ -620,17 +625,26 @@ a {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 987px) {
   .container__logo {
     max-width: 50%;
+    position: absolute;
+    right: -0.5%;
   }
 }
 
 .navbar-toggler-icon {
-  background-color: rgb(233, 233, 224);
   width: 50px;
   height: 50px;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 987px) {
+  .container {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=style-about.css.map */
