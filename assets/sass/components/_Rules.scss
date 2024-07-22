@@ -2,26 +2,36 @@
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
 
 .section-rules {
+  @extend %container;
   background-color: $deepPurple;
 }
   .section-rules__title {
-    font-family: "Poiret One", sans-serif;
-    color: $yellow;
-    font-size: 40px;
-    font-weight: 500;
-    display: flex;
+  font-family: "Poiret One", sans-serif;
+  color: $yellow;
+  font-size: 40px;
+  font-weight: 500;
+  display: flex;
   justify-content: center;
   text-align: center;
   }
 
-.rules_text {
+.text.section-rules__text {
   font-family: "Poiret One", sans-serif;
   color: $yellow;
   font-size: 20px;
-    font-weight: 300;
-    display: flex;
+  font-weight: 300;
+  display: flex;
   justify-content: center;
   text-align: left;
   margin-left: 113px;
   margin-right: 113px;
+  
+  /*align-self: center;
+  max-width: 562px;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 1.8em;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.04em;*/
 }

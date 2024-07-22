@@ -328,7 +328,7 @@ html {
 
 body {
   height: 100%;
-  background: linear-gradient(251deg, rgb(56, 10, 77) 74%, rgb(103, 44, 108) 97%, rgb(129, 34, 136) 100%);
+  background: #380a4d;
   font-family: "Poiret One", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -345,7 +345,7 @@ a {
 .page-title {
   margin: auto;
   margin-top: 16px;
-  font-size: 6em;
+  font-size: 6.4em;
   font-weight: 400;
   line-height: 75px;
   letter-spacing: -2.56px;
@@ -427,16 +427,50 @@ a {
   height: 208px;
 }
 
-.section-link {
+.section-link, .section-rules {
   max-width: 1280px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 32px;
 }
 @media screen and (max-width: 767px) {
-  .section-link {
+  .section-link, .section-rules {
     padding: 0 20px;
   }
+}
+
+.section-rules {
+  background-color: #380a4d;
+}
+
+.section-rules__title {
+  font-family: "Poiret One", sans-serif;
+  color: #ffdc12;
+  font-size: 40px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.text.section-rules__text {
+  font-family: "Poiret One", sans-serif;
+  color: #ffdc12;
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-left: 113px;
+  margin-right: 113px;
+  /*align-self: center;
+  max-width: 562px;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 1.8em;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.04em;*/
 }
 
 .section-link {
@@ -468,10 +502,10 @@ a {
 }
 
 .footer__div {
-  background: linear-gradient(251deg, rgb(56, 10, 77) 74%, rgb(103, 44, 108) 97%, rgb(129, 34, 136) 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
   max-height: 150px;
@@ -479,20 +513,22 @@ a {
   font-style: normal;
   font-weight: 400;
   color: #fff;
+  padding: 20px;
 }
 
 .footer__logo {
-  max-width: 116px;
+  max-width: 130px;
 }
 
 .footer__adress {
+  font-size: 2.3rem;
   color: #ffdc12;
 }
 
 .footer__insta {
-  color: #ffdc12;
+  padding: 10px;
 }
 
 .footer__facebook {
-  color: #ffdc12;
+  padding: 10px;
 }/*# sourceMappingURL=Rules.css.map */
