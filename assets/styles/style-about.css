@@ -484,87 +484,16 @@ a {
   color: #ffdc12;
 }
 
-.section-link, .section-hero {
+.section-link {
   max-width: 1280px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 32px;
 }
 @media screen and (max-width: 767px) {
-  .section-link, .section-hero {
+  .section-link {
     padding: 0 20px;
   }
-}
-
-* {
-  outline: deeppink 1px solid;
-}
-
-.section-hero .section-hero__container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, auto);
-  gap: 3.2em;
-}
-.section-hero .section-hero__img {
-  max-width: 389px;
-  width: 100%;
-  grid-row: span 3;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .section-hero__img {
-    max-width: 315px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .section-hero__img {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__img {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .section-hero__img {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__img {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .page-title.section-hero__title {
-  grid-column: 2;
-  font-size: 6em;
-  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-  display: table;
-  width: 100%;
-  height: 136px;
-}
-.section-hero .section-hero__text {
-  font-size: 3.2em;
-  grid-column: 2;
-  margin: 0 1px;
-}
-.section-hero .button.section-hero__button {
-  font-size: 3.1em;
-  max-width: 509px;
-  width: 100%;
-  height: 79px;
-  left: -19px;
-  bottom: 15px;
 }
 
 .section-link {
@@ -618,22 +547,140 @@ a {
   color: #fff;
   padding: 20px;
 }
+@media screen and (max-width: 768px) {
+  .footer__div {
+    padding: 0;
+    flex-direction: column;
+  }
+}
 
 .footer__logo {
   max-width: 130px;
 }
 
 .footer__adress {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   color: #ffdc12;
 }
 
-.footer__insta {
+.footer__contact {
   padding: 10px;
+  max-width: 50px;
 }
 
-.footer__facebook {
-  padding: 10px;
+.footer__contact:hover {
+  color: beige;
+}
+
+.footer__contact:hover {
+  transform: rotate(20deg);
+}
+
+.header__div {
+  max-width: 100%;
+}
+@media screen and (max-width: 987px) {
+  .header__div {
+    display: flex;
+    max-width: 90%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  max-width: 228px;
+}
+
+.navbar {
+  background-color: #380a4d;
+  padding-left: 70px;
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0;
+    background-color: none;
+  }
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E4B548;
+  font-family: "Poiret One", sans-serif;
+  font-size: 19px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 125px;
+}
+
+.nav-item:hover {
+  color: #E4B548;
+  background-color: #ad10d3;
+}
+
+.container__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 987px) {
+  .container__logo {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  .container {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+
+.navbar-toggler-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+@media screen and (max-width: 987px) {
+  .navbar-toggler-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none !important;
+  }
+}
+
+.navbar-toggler-icon::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  height: 3px;
+  width: 90%;
+  background: #E4B548;
+}
+
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 3px;
+  height: 3px;
+  width: 90%;
+  background: #E4B548;
+}
+
+.navbar-toggler-icon span {
+  height: 3px;
+  width: 90%;
+  background: #E4B548;
 }
 
 /*# sourceMappingURL=style-about.css.map */
