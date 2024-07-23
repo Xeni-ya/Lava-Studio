@@ -32,6 +32,7 @@ a {
 
 
 //==================Заголовки====================//
+
 .page-title {
   margin: auto;
   margin-top: 16px;
@@ -73,6 +74,28 @@ a {
   }
 }
 
+.subtitle {
+  font-size: 3.6em;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.8em;
+    line-height: 32px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 2.4em;
+    line-height: 28px;
+  }
+}
+
+//================Конец Заголовки==================//
+
+//===================Навигация=====================//
+
 .text {
   font-size: 2em;
   font-weight: 400;
@@ -89,25 +112,11 @@ a {
     line-height: 28px;
   }
 }
-//================Конец Заголовки==================//
 
-//===================Навигация=====================//
-.nav-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 240px;
-  height: 18px;
-  
-  list-style: none;
-  
-  .nav-items__link {
-    font-size: 1.5em;
-  }
-}
 //===============Конец Навигация==================//
 
 //====================Кнопки=====================//
+
 .button {
   grid-column: 2;
   max-width: 409px;
@@ -166,6 +175,7 @@ a {
   background: $deepPurple;
   color: $yellow;
 }
+
 //==================Конец Кнопки==================//
 
 //================КОНЕЦ ОБЩИЕ СТИЛИ================//
