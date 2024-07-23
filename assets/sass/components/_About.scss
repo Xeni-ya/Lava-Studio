@@ -1,92 +1,185 @@
 // "  sass --watch assets/sass/about.scss assets/styles/style-about.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+// * {
+//   outline: deeppink 1px solid;
+// } 
+
 .section-hero {
-  @extend %container;
+  margin-top: 50px;
 
   .section-hero__container {
+    @extend %container;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: minmax(100px, 389px) minmax(100px, 779px);
     grid-template-rows: repeat(3, auto);
-    gap: 10px;
+    column-gap: 3.2em;
   }
-  .section-hero__img{
-    width: 500px;
+
+  .section-hero__img {
+    max-width: 389px;
+    width: 100%;
     grid-row: span 3;
+    margin-top: 20px;
+
+    @media screen and (max-width: 1024px) {
+      width: 315px;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 377px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 320px) {
+      max-width: 272px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
   }
 
   .page-title.section-hero__title {
     grid-column: 2;
     font-size: 6em;
     background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0B2349;
     display: table;
-    margin: 20px auto;
+    width: 100%;
+    height: 136px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 510px;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 377px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 320px) {
+      max-width: 272px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
   }
 
   .section-hero__text {
     font-size: 3.2em;
     grid-column: 2;
+    margin-top: 10px;
+    @media screen and (max-width: 1024px) {
+      max-width: 495px;
+    }
+  
+    @media screen and (max-width: 425px) {
+      max-width: 377px;
+      width: 100%;
+    }
+  
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
+  
+    @media screen and (max-width: 320px) {
+      max-width: 272px;
+      width: 100%;
+    }
+  
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
   }
 
   .button.section-hero__button {
-    grid-column: 2;
-    max-width: 509px;
-    height: 79px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px 30px;
-    margin: 30px 0px;
-    position: relative;
-    color: $white;
-    border: 1px solid $grey;
-    background: none;
     font-size: 3.1em;
-    font-weight: 400;
-    font-family: "Poiret One", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  .button.section-hero__button:before, 
-  .button.section-hero__button:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    box-sizing: border-box;
-  }
-  .button.section-hero__button:before {
-    bottom: 0;
-    left: 0;
-    border-left: 1px solid $yellow;
-    border-top: 1px solid $yellow;
-    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-  }
-  .button.section-hero__button:after {
-    top: 0;
-    right: 0;
-    border-right: 1px solid $yellow;
-    border-bottom: 1px solid $yellow;
-    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
-  }
-  .button.section-hero__button:hover:before, 
-  .button.section-hero__button:hover:after {
-    height: 100%;
+    max-width: 509px;
     width: 100%;
-    opacity: 1;
+    height: 79px;
+    left: -19px;
+    bottom: 5px;
+    @media screen and (max-width: 1024px) {
+      max-width: 509px;
+    }
+  
+    @media screen and (max-width: 425px) {
+      max-width: 377px;
+      width: 100%;
+    }
+  
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
+  
+    @media screen and (max-width: 320px) {
+      max-width: 272px;
+      width: 100%;
+    }
+  
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
   }
-  .button.section-hero__button:hover:before {
-    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+
+  .section-courses__watsapp {
+      position:fixed;
+      right:10px;
+      bottom:10px;
+      cursor:pointer;
   }
-  .button.section-hero__button:hover:after {
-    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+  [data-title]::after {
+      content: attr(data-title);
+      position:absolute;
+      bottom:60px;
+      left:-100px;
+      font-size: 2em;
+      font-weight: 400;
+      line-height: 44px;
+      letter-spacing: -1.6px;
+      color: $yellow-dark; 
+      border: 1px solid $yellow-dark;
+      min-block-size: min-content;
+      opacity:0;
+      transition: 0.5s;
+      pointer-events: none; 
+      padding: 0.5em; 
+      @media screen and (max-width: 768px) {
+          font-size: 1.8em;
+          line-height: 32px;
+      }
+      @media screen and (max-width: 375px) {
+          font-size: 1.4em;
+          line-height: 28px;
+      }
   }
-  .button.section-hero__button:hover {
-    background: $deepPurple;
-    color: $yellow;
+  [data-title]:hover::after {
+      opacity: 1; 
+  }
+  .section-courses__watsapp-img {
+      width:40px;
+      height:40px;
   }
 }
-
-

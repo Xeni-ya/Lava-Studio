@@ -1,2 +1,62 @@
 // "  sass --watch assets/sass/contacts.scss assets/styles/style-contacts.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+
+.section-contacts{
+    @extend %container;
+}
+.section-contacts__conteiner{
+    display: grid;
+    gap: 5%;
+    color: $yellow;
+    margin-bottom: 9%;
+
+}
+.section-contacts__title{
+    margin: auto;
+    margin-top: 16px;
+    font-size: 6.4em;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: -2.56px;
+    text-align: center;
+    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-contacts__subtitle {
+    font-size: 3.6em;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    color: $white;
+    text-align: center;
+
+}
+.section-contacts__contacts{
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    justify-content: center;
+    gap: 3%;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 3%;
+    color: $white;
+}
+    
+.section-contacts__map-conteiner{
+    display: flex;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    color: $white;
+}
+.section-contacts__map-conteiner__paragraph{
+    text-align: start;
+    margin-left: 3%;
+}
+.section-contacts__map{
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+}

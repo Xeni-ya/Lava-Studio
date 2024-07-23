@@ -1,2 +1,26 @@
 // "  sass --watch assets/sass/gallery.scss assets/styles/style-gallery.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+
+.section-gallery {
+    @extend %container;
+}
+.section-gallery__title{
+    margin: auto;
+    margin-top: 16px;
+    font-size: 6.4em;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: -2.56px;
+    text-align: center;
+    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-gallery__paragraph{
+    font-size: 3.6em;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    color: $white;
+    text-align: center;
+}
