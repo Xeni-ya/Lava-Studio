@@ -3,33 +3,33 @@
 .section_teachers{
   @extend %container;
   background-color: $deepPurple;
-}
-
-.teachers_foto{
-  max-width: 500px;
-  max-height: 350px;
-  margin-left: 113px;
-  margin-right: 113px;
-}
-
-.teachers_name {
-  font-family: "Poiret One", sans-serif;
-  color: $yellow;
-  font-size: 40px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.teachers_specification {
-  font-family: "Poiret One", sans-serif;
-  color: $yellow;
-  font-size: 20px;
-  font-weight: 300;
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  margin-left: 113px;
-  margin-right: 113px;
+  
+  .teachers_foto{
+    max-width: 500px;
+    max-height: 350px;
+    margin-left: 113px;
+    margin-right: 113px;
+  }
+  
+  .subtitle.teachers_name {
+    font-family: "Poiret One", sans-serif;
+    color: $yellow;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .teachers_specification {
+    font-family: "Poiret One", sans-serif;
+    color: $yellow;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: 113px;
+    margin-right: 113px;
+  }
 }
