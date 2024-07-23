@@ -2,18 +2,19 @@
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
 
 .section-courses {
+    @extend %container;
     display:flex;
-    flex-direction:column;
-    align-items:center;
+    flex-direction: column;
     gap:30px;
 }
 .section-courses__programs {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap:20px;
+    @media screen and (max-width: 874px) {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }
-  /*874 
-     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
 .section-courses__program {
     display:flex;
     flex-direction:column;
@@ -48,9 +49,6 @@
     bottom:10px;
     cursor:pointer;
 }
-  /*[data-title] {
-    position:relative;
-  }*/
 [data-title]::after {
     content: attr(data-title);
     position:absolute;
@@ -60,13 +58,21 @@
     font-weight: 400;
     line-height: 44px;
     letter-spacing: -1.6px;
-    background:#ffdc12; 
+    color: $yellow-dark; 
+    border: 1px solid $yellow-dark;
     min-block-size: min-content;
     opacity:0;
     transition: 0.5s;
     pointer-events: none; 
-    color: #fff; 
     padding: 0.5em; 
+    @media screen and (max-width: 768px) {
+        font-size: 1.8em;
+        line-height: 32px;
+    }
+    @media screen and (max-width: 375px) {
+        font-size: 1.4em;
+        line-height: 28px;
+    }
 }
 [data-title]:hover::after {
     opacity: 1; /* Показываем подсказку */
