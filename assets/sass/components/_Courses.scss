@@ -1,2 +1,83 @@
 // "  sass --watch assets/sass/courses.scss assets/styles/style-courses.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+
+.section-courses {
+    @extend %container;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.section-courses__programs {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap:20px;
+    @media screen and (max-width: 874px) {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+.section-courses__program {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+.section-courses__program-title {
+    font-size: 2.6em;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+}
+.section-courses__program-img{
+    max-width:600px;
+    width:100%;
+    height:370px;
+    object-fit:cover;
+}
+.section-courses__program-text {
+    width:100%;
+    text-align:center;
+    flex-grow:1;
+}
+.section-courses__program-button {
+    text-align:center;
+}
+.section-courses__watsapp {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+}
+[data-title]::after {
+    content: attr(data-title);
+    position:absolute;
+    bottom:60px;
+    left:-100px;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    color: $yellow-dark; 
+    border: 1px solid $yellow-dark;
+    min-block-size: min-content;
+    opacity:0;
+    transition: 0.5s;
+    pointer-events: none; 
+    padding: 0.5em; 
+    @media screen and (max-width: 768px) {
+        font-size: 1.8em;
+        line-height: 32px;
+    }
+    @media screen and (max-width: 375px) {
+        font-size: 1.4em;
+        line-height: 28px;
+    }
+}
+[data-title]:hover::after {
+    opacity: 1; 
+}
+.section-courses__watsapp-img {
+    width:40px;
+    height:40px;
+}
