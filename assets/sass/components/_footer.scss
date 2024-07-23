@@ -39,6 +39,7 @@
 }
 
 .header__div {
+  max-width: 100%;
   @media screen and (max-width: 987px) {
     display: flex;
     max-width: 90%;
@@ -84,15 +85,7 @@
     align-items: center;
     @media screen and (max-width: 987px) {
       max-width: 50%;
-      position: absolute;
-      right: -0.5%;
     } 
-  }
-
-  .navbar-toggler-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
   }
 
   .container {
@@ -102,3 +95,38 @@
       margin-top: 50px;
     }
   }
+  .navbar-toggler-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    @media screen and (max-width: 987px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none !important;
+  }
+}
+.navbar-toggler-icon::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    height: 3px;
+    width: 90%;
+    background: $yellow-dark;
+}
+.navbar-toggler-icon::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 3px;
+    height: 3px;
+    width: 90%;
+    background: $yellow-dark;
+}
+.navbar-toggler-icon span{
+    height: 3px;
+    width: 90%;
+    background: $yellow-dark;
+}
