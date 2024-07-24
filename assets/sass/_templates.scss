@@ -100,7 +100,7 @@ a {
   font-size: 2em;
   font-weight: 400;
   line-height: 44px;
-  letter-spacing: -1.6px;
+  color: $yellow;
   
   @media screen and (max-width: 768px) {
     font-size: 1.8em;
@@ -135,45 +135,60 @@ a {
   font-family: "Poiret One", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-.button:before, 
-.button:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  box-sizing: border-box;
-}
-.button:before {
-  bottom: 0;
-  left: 0;
-  border-left: 1px solid $yellow;
-  border-top: 1px solid $yellow;
-  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-}
-.button:after {
-  top: 0;
-  right: 0;
-  border-right: 1px solid $yellow;
-  border-bottom: 1px solid $yellow;
-  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
-}
-.button:hover:before, 
-.button:hover:after {
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-}
-.button.section-hero__button:hover:before {
-  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
-}
-.button.section-hero__button:hover:after {
-  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
-}
-.button.section-hero__button:hover {
-  background: $deepPurple;
-  color: $yellow;
+  
+  .button:before, 
+  .button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  .button:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid $yellow;
+    border-top: 1px solid $yellow;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+  }
+  .button:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid $yellow;
+    border-bottom: 1px solid $yellow;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+  }
+  .button:hover:before, 
+  .button:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+  .button:hover:before {
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+  }
+  .button:hover:after {
+    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+  }
+  .button:hover {
+    background: $deepPurple;
+    color: $yellow;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.8em;
+    // padding: 15px 25px;
+    // margin: 5px 15px;
+    // position: relative;
+    // left: -4px;
+  }
+  
+  @media screen and (max-width: 375px) {
+    font-size: 1.4em;
+    padding: 10px 20px;
+    margin: 0px 10px;
+  }
 }
 
 //==================Конец Кнопки==================//

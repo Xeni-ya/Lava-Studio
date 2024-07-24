@@ -10,15 +10,16 @@
   .section-hero__container {
     @extend %container;
     display: grid;
-    grid-template-columns: minmax(100px, 389px) minmax(100px, 779px);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
     column-gap: 3.2em;
+    justify-items: center;
   }
 
   .section-hero__img {
-    max-width: 389px;
+    max-width: 1200px;
     width: 100%;
-    grid-row: span 3;
+    grid-row: 2;
     margin-top: 20px;
 
     @media screen and (max-width: 1024px) {
@@ -47,7 +48,7 @@
   }
 
   .page-title.section-hero__title {
-    grid-column: 2;
+    grid-column: 1;
     font-size: 6em;
     background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
     background-clip: border-box;
@@ -83,10 +84,9 @@
     }
   }
 
-  .section-hero__text {
-    font-size: 3.2em;
-    grid-column: 2;
-    margin-top: 10px;
+  .text.section-hero__text {
+    white-space: pre-line; 
+    grid-column: 1;
     @media screen and (max-width: 1024px) {
       max-width: 495px;
     }
@@ -119,6 +119,8 @@
     height: 79px;
     left: -19px;
     bottom: 5px;
+    grid-column: 1;
+
     @media screen and (max-width: 1024px) {
       max-width: 509px;
     }
@@ -144,7 +146,7 @@
     }
   }
 
-  .section-courses__watsapp {
+  .section-hero__watsapp {
       position:fixed;
       right:10px;
       bottom:10px;
@@ -178,7 +180,7 @@
   [data-title]:hover::after {
       opacity: 1; 
   }
-  .section-courses__watsapp-img {
+  .section-hero__watsapp {
       width:40px;
       height:40px;
   }
