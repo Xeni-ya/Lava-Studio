@@ -5,15 +5,24 @@
     @extend %container;
     display:flex;
     flex-direction: column;
-    gap:30px;
+    gap:32px;
+    padding: 0 24px;
+    align-items: center;
+}
+.section-courses__title,
+.section-courses__subtitle {
+    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .section-courses__programs {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap:20px;
+/*
     @media screen and (max-width: 874px) {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }*/
 }
 .section-courses__program {
     display:flex;
@@ -28,6 +37,7 @@
     line-height: 44px;
     letter-spacing: -1.6px;
     text-transform: uppercase;
+    color:$yellow-dark;
 }
 .section-courses__program-img{
     max-width:600px;
@@ -60,7 +70,7 @@
     letter-spacing: -1.6px;
     color: $yellow-dark; 
     border: 1px solid $yellow-dark;
-    min-block-size: min-content;
+    min-block-size: max-content;
     opacity:0;
     transition: 0.5s;
     pointer-events: none; 
@@ -78,6 +88,6 @@
     opacity: 1; 
 }
 .section-courses__watsapp-img {
-    width:40px;
-    height:40px;
+    width:50px;
+    height:50px;
 }
