@@ -344,7 +344,7 @@ a {
 .page-title {
   margin: auto;
   margin-top: 16px;
-  font-size: 6em;
+  font-size: 6.4em;
   font-weight: 400;
   line-height: 75px;
   letter-spacing: -2.56px;
@@ -389,10 +389,9 @@ a {
 
 .subtitle {
   font-size: 3.6em;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 44px;
   letter-spacing: -1.6px;
-  text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .subtitle {
@@ -407,47 +406,90 @@ a {
   }
 }
 
-.text {
-  font-size: 2em;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: -1.6px;
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 18px;
+  list-style: none;
 }
-@media screen and (max-width: 768px) {
-  .text {
-    font-size: 1.8em;
-    line-height: 32px;
-  }
+.nav-items .nav-items__link {
+  font-size: 1.5em;
 }
-@media screen and (max-width: 375px) {
-  .text {
-    font-size: 1.4em;
-    line-height: 28px;
+
+.logo__icon {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: 224px;
+  height: 208px;
+}
+
+<<<<<<< HEAD:assets/sass/About.css
+.section-link, .section-hero {
+=======
+.section-gallery, .section-link {
+>>>>>>> main:assets/styles/style-gallery.css
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media screen and (max-width: 767px) {
+<<<<<<< HEAD:assets/sass/About.css
+  .section-link, .section-hero {
+=======
+  .section-gallery, .section-link {
+>>>>>>> main:assets/styles/style-gallery.css
+    padding: 0 20px;
   }
 }
 
-.button {
+.section-hero .section-hero__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+}
+.section-hero .section-hero__img {
+  width: 500px;
+  grid-row: span 3;
+}
+.section-hero .page-title.section-hero__title {
   grid-column: 2;
-  max-width: 409px;
-  width: 100%;
-  height: 69px;
+  font-size: 6em;
+  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
+}
+.section-hero .section-hero__text {
+  font-size: 3.2em;
+  grid-column: 2;
+}
+.section-hero .button.section-hero__button {
+  grid-column: 2;
+  max-width: 509px;
+  height: 79px;
   text-decoration: none;
   display: inline-block;
   padding: 20px 30px;
-  margin: 10px 20px;
+  margin: 30px 0px;
   position: relative;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: none;
-  font-size: 2em;
+  font-size: 3.1em;
   font-weight: 400;
   font-family: "Poiret One", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
-.button:before,
-.button:after {
+.section-hero .button.section-hero__button:before,
+.section-hero .button.section-hero__button:after {
   content: "";
   position: absolute;
   width: 0;
@@ -455,260 +497,39 @@ a {
   opacity: 0;
   box-sizing: border-box;
 }
-
-.button:before {
+.section-hero .button.section-hero__button:before {
   bottom: 0;
   left: 0;
   border-left: 1px solid #ffdc12;
   border-top: 1px solid #ffdc12;
   transition: 0s ease opacity 0.8s, 0.2s ease width 0.4s, 0.2s ease height 0.6s;
 }
-
-.button:after {
+.section-hero .button.section-hero__button:after {
   top: 0;
   right: 0;
   border-right: 1px solid #ffdc12;
   border-bottom: 1px solid #ffdc12;
   transition: 0s ease opacity 0.4s, 0.2s ease width, 0.2s ease height 0.2s;
 }
-
-.button:hover:before,
-.button:hover:after {
+.section-hero .button.section-hero__button:hover:before,
+.section-hero .button.section-hero__button:hover:after {
   height: 100%;
   width: 100%;
   opacity: 1;
 }
-
-.button.section-hero__button:hover:before {
+.section-hero .button.section-hero__button:hover:before {
   transition: 0s ease opacity 0s, 0.2s ease height, 0.2s ease width 0.2s;
 }
-
-.button.section-hero__button:hover:after {
+.section-hero .button.section-hero__button:hover:after {
   transition: 0s ease opacity 0.4s, 0.2s ease height 0.4s, 0.2s ease width 0.6s;
 }
-
-.button.section-hero__button:hover {
+.section-hero .button.section-hero__button:hover {
   background: #380a4d;
   color: #ffdc12;
 }
 
-.section-link, .section-hero .section-hero__container {
-  max-width: 1280px;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
-@media screen and (max-width: 767px) {
-  .section-link, .section-hero .section-hero__container {
-    padding: 0 20px;
-  }
-}
-
-.section-hero {
-  margin-top: 50px;
-}
-.section-hero .section-hero__container {
-  display: grid;
-  grid-template-columns: minmax(100px, 389px) minmax(100px, 779px);
-  grid-template-rows: repeat(3, auto);
-  column-gap: 3.2em;
-}
-.section-hero .section-hero__img {
-  max-width: 389px;
-  width: 100%;
-  grid-row: span 3;
-  margin-top: 20px;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .section-hero__img {
-    width: 315px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .section-hero__img {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__img {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .section-hero__img {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__img {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .page-title.section-hero__title {
-  grid-column: 2;
-  font-size: 6em;
-  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-  display: table;
-  width: 100%;
-  height: 136px;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 510px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .section-hero__text {
-  font-size: 3.2em;
-  grid-column: 2;
-  margin-top: 10px;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .section-hero__text {
-    max-width: 495px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .section-hero__text {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__text {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .section-hero__text {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__text {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .button.section-hero__button {
-  font-size: 3.1em;
-  max-width: 509px;
-  width: 100%;
-  height: 79px;
-  left: -19px;
-  bottom: 5px;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .button.section-hero__button {
-    max-width: 509px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .button.section-hero__button {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .button.section-hero__button {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .button.section-hero__button {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .button.section-hero__button {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .section-courses__watsapp {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  cursor: pointer;
-}
-.section-hero [data-title]::after {
-  content: attr(data-title);
-  position: absolute;
-  bottom: 60px;
-  left: -100px;
-  font-size: 2em;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: -1.6px;
-  color: #E4B548;
-  border: 1px solid #E4B548;
-  min-block-size: min-content;
-  opacity: 0;
-  transition: 0.5s;
-  pointer-events: none;
-  padding: 0.5em;
-}
-@media screen and (max-width: 768px) {
-  .section-hero [data-title]::after {
-    font-size: 1.8em;
-    line-height: 32px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero [data-title]::after {
-    font-size: 1.4em;
-    line-height: 28px;
-  }
-}
-.section-hero [data-title]:hover::after {
-  opacity: 1;
-}
-.section-hero .section-courses__watsapp-img {
-  width: 40px;
-  height: 40px;
-}
-
 .section-link {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 15%;
   text-align: center;
 }
 .section-link a {
@@ -734,11 +555,6 @@ a {
   color: #ffdc12;
   border: 2px solid #ffdc12;
 }
-@media screen and (max-width: 425px) {
-  .section-link {
-    font-size: 1.2em;
-  }
-}
 
 .footer__div {
   display: flex;
@@ -754,140 +570,48 @@ a {
   color: #fff;
   padding: 20px;
 }
-@media screen and (max-width: 768px) {
-  .footer__div {
-    padding: 0;
-    flex-direction: column;
-  }
-}
 
 .footer__logo {
   max-width: 130px;
 }
 
 .footer__adress {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #ffdc12;
 }
 
-.footer__contact {
+.footer__insta {
   padding: 10px;
-  max-width: 50px;
 }
 
-.footer__contact:hover {
-  color: beige;
+.footer__facebook {
+  padding: 10px;
+<<<<<<< HEAD:assets/sass/About.css
+}/*# sourceMappingURL=About.css.map */
+=======
 }
 
-.footer__contact:hover {
-  transform: rotate(20deg);
+.section-gallery__title {
+  margin: auto;
+  margin-top: 16px;
+  font-size: 6.4em;
+  font-weight: 400;
+  line-height: 75px;
+  letter-spacing: -2.56px;
+  text-align: center;
+  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.header__div {
-  max-width: 100%;
-}
-@media screen and (max-width: 987px) {
-  .header__div {
-    display: flex;
-    max-width: 90%;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-  }
+.section-gallery__paragraph {
+  font-size: 3.6em;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  color: #fff;
+  text-align: center;
 }
 
-.header__logo {
-  max-width: 228px;
-}
-
-.navbar {
-  background-color: #380a4d;
-  padding-left: 70px;
-  max-width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .navbar {
-    padding: 0;
-    background-color: none;
-  }
-}
-
-.nav-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #E4B548;
-  font-family: "Poiret One", sans-serif;
-  font-size: 19px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  width: 125px;
-}
-
-.nav-item:hover {
-  color: #E4B548;
-  background-color: #ad10d3;
-}
-
-.container__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 987px) {
-  .container__logo {
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 987px) {
-  .container {
-    padding-left: 0;
-    margin-left: 0;
-    margin-top: 50px;
-  }
-}
-
-.navbar-toggler-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 15px;
-}
-@media screen and (max-width: 987px) {
-  .navbar-toggler-icon {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: none !important;
-  }
-}
-
-.navbar-toggler-icon::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 3px;
-  height: 3px;
-  width: 90%;
-  background: #E4B548;
-}
-
-.navbar-toggler-icon::after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 3px;
-  height: 3px;
-  width: 90%;
-  background: #E4B548;
-}
-
-.navbar-toggler-icon span {
-  height: 3px;
-  width: 90%;
-  background: #E4B548;
-}
-
-/*# sourceMappingURL=style-about.css.map */
+/*# sourceMappingURL=style-gallery.css.map */
+>>>>>>> main:assets/styles/style-gallery.css
