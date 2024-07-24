@@ -1,2 +1,31 @@
 // "  sass --watch assets/sass/price.scss assets/styles/style-price.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+
+
+.section-price {
+  @extend %container;
+
+  .section-price__h1 {
+    grid-column: 2;
+    font-size: 6em;
+    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .section-price__info {
+    display: flex;
+    gap: 25px;
+    margin: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+  }
+  
+}
