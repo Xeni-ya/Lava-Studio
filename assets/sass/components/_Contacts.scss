@@ -3,33 +3,27 @@
 
 .section-contacts{
     @extend %container;
+    margin-top: 32px;
 }
 .section-contacts__conteiner{
     display: grid;
-    gap: 5%;
     color: $yellow;
     margin-bottom: 9%;
 
 }
 .section-contacts__title{
     margin: auto;
-    margin-top: 16px;
-    font-size: 6.4em;
+    font-size: 4.6em;
     font-weight: 400;
-    line-height: 75px;
-    letter-spacing: -2.56px;
+    line-height: 50px;
     text-align: center;
-    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .section-contacts__subtitle {
-    font-size: 3.6em;
+    font-size: 2em;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: -1.6px;
-    color: $white;
     text-align: center;
+    margin-bottom: 0;
 
 }
 .section-contacts__contacts{
@@ -37,26 +31,165 @@
     grid-template-columns: repeat(6,100px);
     justify-content: center;
     gap: 3%;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 3%;
-    color: $white;
+    color: $yellow;
+}
+.section-contacts__logo{
+    width: 60px;
+}
+.section-contacts__logo:hover{
+    transform: scale(1.2);
 }
     
 .section-contacts__map-conteiner{
     display: flex;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: -1.6px;
-    color: $white;
+    color: $yellow;
+    flex-direction: column;
+    align-items: center;
 }
 .section-contacts__map-conteiner__paragraph{
     text-align: start;
     margin-left: 3%;
+    margin-bottom: 0;
 }
 .section-contacts__map{
     width: 1000px;
     height: 300px;
     margin: auto;
+}
+
+.footer__div { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-height: 150px;
+    font-family: "Poiret One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $white;
+    padding: 20px;
+    @media screen and (max-width: 768px) {
+    padding: 0;
+    flex-direction: column;
+} 
+}
+.footer__logo {
+max-width: 130px;
+
+}
+.footer__adress {
+font-size: 2.5rem;
+color: $yellow;
+}
+.footer__contact {
+padding: 10px;
+max-width: 50px;
+}
+
+.footer__contact:hover {
+color: beige;
+}
+.footer__contact:hover {
+transform: rotate(20deg);
+}
+
+.header__div {
+max-width: 100%;
+@media screen and (max-width: 987px) {
+    display: flex;
+    max-width: 90%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+} 
+}
+.header__logo {
+max-width: 228px;
+}
+
+.navbar {
+background-color: #380a4d;
+padding-left: 70px;
+max-width: 100%;
+@media screen and (max-width: 768px) {
+    padding: 0;
+    background-color: none;
+} 
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $yellow-dark;
+    font-family: "Poiret One", sans-serif;
+    font-size: 19px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 125px;
+    }
+    .nav-item:hover {
+    color: $yellow-dark;
+    background-color: $pink;
+    }
+
+.container__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 987px) {
+    max-width: 50%;
+    } 
+}
+
+.container {
+    @media screen and (max-width: 987px) {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 50px;
+    }
+}
+.navbar-toggler-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    @media screen and (max-width: 987px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none !important;
+}
+}
+.navbar-toggler-icon::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    height: 3px;
+    width: 90%;
+    background: $yellow-dark;
+}
+.navbar-toggler-icon::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 3px;
+    height: 3px;
+    width: 90%;
+    background: $yellow-dark;
+}
+.navbar-toggler-icon span{
+    height: 3px;
+    width: 90%;
+    background: $yellow-dark;
 }
