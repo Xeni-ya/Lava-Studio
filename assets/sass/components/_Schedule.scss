@@ -4,7 +4,6 @@
 .section-schedule {
   @extend %container;
 
-
   .section-schedule__h1 {
     grid-column: 2;
     font-size: 6em;
@@ -27,7 +26,7 @@
   // в 1 строку
   .section-schedule__calendar-timeline {
     display: grid;
-    grid-template-rows: repeat(12, 100px);
+    grid-template-rows: repeat(12, 150px);
   }
 
   // в 2 строки
@@ -64,7 +63,7 @@
 
   .events {
     display: grid;
-    grid-template-rows: repeat(12, 100px);
+    grid-template-rows: repeat(12, 150px);
     border-radius: 5px;
   }
 
@@ -339,7 +338,6 @@
     display: inline;
     font-size: 3em;
     color: #0B2349;
-
     -webkit-text-fill-color: transparent;
     background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
     background-clip: border-box;
@@ -354,71 +352,6 @@
     justify-content: center;
   }
 
-  .section-schedule__button-btn {
-    grid-column: 2;
-    max-width: 509px;
-    height: 79px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px 30px;
-    margin: 30px 0px;
-    // position: relative;
-    color: $white;
-    border: 1px solid $grey;
-    background: none;
-    font-size: 3em;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-  .section-schedule__button-btn:before,
-  .section-schedule__button-btn:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    box-sizing: border-box;
-  }
-
-  .section-schedule__button-btn:before {
-    bottom: 0;
-    left: 0;
-    border-left: 1px solid $yellow;
-    border-top: 1px solid $yellow;
-    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-  }
-
-  .section-schedule__button-btn:after {
-    top: 0;
-    right: 0;
-    border-right: 1px solid $yellow;
-    border-bottom: 1px solid $yellow;
-    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
-  }
-
-  .section-schedule__button-btn:hover:before,
-  .section-schedule__button-btn:hover:after {
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-  }
-
-  .section-schedule__button-btn:hover:before {
-    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
-  }
-
-  .section-schedule__button-btn:hover:after {
-    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
-  }
-
-  .section-schedule__button-btn:hover {
-    background: $deepPurple;
-    color: $yellow;
-  }
-
-
   // media
   @media (max-width: 1412px) and (min-width: 790px) {
     .section-schedule__calendar-timeline {
@@ -427,7 +360,7 @@
 
     .section-schedule__calendar-timeline2 {
       display: grid;
-      grid-template-rows: repeat(26, 100px);
+      grid-template-rows: repeat(26, 150px);
     }
 
     .section-schedule__calendar-timeline3 {
@@ -437,7 +370,6 @@
     .section-schedule__calendar-timeline4 {
       display: none;
     }
-
   }
 
   @media(max-width: 1570px) {
@@ -461,7 +393,7 @@
 
     .section-schedule__calendar-timeline3 {
       display: grid;
-      grid-template-rows: repeat(39, 100px);
+      grid-template-rows: repeat(39, 150px);
     }
 
     .section-schedule__calendar-timeline4 {
@@ -488,13 +420,12 @@
 
     .section-schedule__calendar-timeline4 {
       display: grid;
-      grid-template-rows: repeat(78, 1fr);
+      grid-template-rows: repeat(78, 150px);
     }
 
     .section-schedule__h1 {
       font-size: 4em;
     }
-
 
     .section-schedule__button-btn {
       font-size: 1.5em;
