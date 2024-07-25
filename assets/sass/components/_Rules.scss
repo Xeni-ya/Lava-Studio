@@ -1,36 +1,43 @@
-// "  sass --watch assets/sass/rules.scss assets/styles/style-rules.css  "
+// "  sass --watch assets/sass/Rules.scss assets/styles/style-rules.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
 
 .section-rules {
-<<<<<<< HEAD
   @extend %container;
   background-color: $deepPurple;
 }
-=======
-  
-  .title {
-  }
->>>>>>> main
   .section-rules__title {
   font-family: "Poiret One", sans-serif;
   color: $yellow;
-  font-size: 40px;
-  font-weight: 500;
   display: flex;
   justify-content: center;
-  text-align: center;
+  font-size: 4.6em;
+  font-weight: 400;
+  line-height: 50px;
+  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
-
-.text.section-rules__text {
+  .text_section-rules{
+    font-family: "Poiret One", sans-serif;
+  /*color: $yellow;
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;*/
+  margin-left: 113px;
+  margin-right: 113px;
+  }
+.text_section-rules__text {
+  
   font-family: "Poiret One", sans-serif;
   color: $yellow;
   font-size: 20px;
   font-weight: 300;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   text-align: left;
-  margin-left: 113px;
-  margin-right: 113px;
   
   /*align-self: center;
   max-width: 562px;

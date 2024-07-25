@@ -3,33 +3,63 @@
 .section_teachers{
   @extend %container;
   background-color: $deepPurple;
-  
-  .teachers_foto{
-    max-width: 500px;
-    max-height: 350px;
-    margin-left: 113px;
-    margin-right: 113px;
-  }
-  
-  .subtitle.teachers_name {
+  .section-teachers__title{
     font-family: "Poiret One", sans-serif;
     color: $yellow;
-    font-size: 40px;
-    font-weight: 500;
     display: flex;
     justify-content: center;
-    text-align: center;
+    font-size: 4.6em;
+    font-weight: 400;
+    line-height: 50px;
+    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .teachers__title{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    gap: 24px;
+    margin-bottom: 44px;
+  
+  }
+  .teachers_wrapper{
+    display: flex;
+    flex-direction: column;
   }
   
-  .teachers_specification {
+  .teachers_foto{
+   display: flex;
+    max-width: 500px;
+    max-height: 350px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .subtitle_teachers_name {
+    font-family: "Poiret One", sans-serif;
+    color: $yellow;
+    display: flex;
+    font-size: 40px;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .teachers_specification_text{
     font-family: "Poiret One", sans-serif;
     color: $yellow;
     font-size: 20px;
     font-weight: 300;
     display: flex;
+    text-align: justify;
     justify-content: center;
-    text-align: left;
-    margin-left: 113px;
-    margin-right: 113px;
-  }
+    margin-left: 10px;
+    margin-right: 10px;
+}
 }
