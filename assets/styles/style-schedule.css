@@ -712,7 +712,7 @@ a {
 }
 .section-schedule .section-schedule__calendar-timeline {
   display: grid;
-  grid-template-rows: repeat(12, 100px);
+  grid-template-rows: repeat(12, 150px);
 }
 .section-schedule .section-schedule__calendar-timeline2 {
   display: none;
@@ -739,7 +739,7 @@ a {
 }
 .section-schedule .events {
   display: grid;
-  grid-template-rows: repeat(12, 100px);
+  grid-template-rows: repeat(12, 150px);
   border-radius: 5px;
 }
 .section-schedule .start-1 {
@@ -974,7 +974,7 @@ a {
   }
   .section-schedule .section-schedule__calendar-timeline2 {
     display: grid;
-    grid-template-rows: repeat(26, 100px);
+    grid-template-rows: repeat(26, 150px);
   }
   .section-schedule .section-schedule__calendar-timeline3 {
     display: none;
@@ -1000,7 +1000,7 @@ a {
   }
   .section-schedule .section-schedule__calendar-timeline3 {
     display: grid;
-    grid-template-rows: repeat(39, 100px);
+    grid-template-rows: repeat(39, 150px);
   }
   .section-schedule .section-schedule__calendar-timeline4 {
     display: none;
@@ -1021,7 +1021,7 @@ a {
   }
   .section-schedule .section-schedule__calendar-timeline4 {
     display: grid;
-    grid-template-rows: repeat(78, 1fr);
+    grid-template-rows: repeat(78, 150px);
   }
   .section-schedule .section-schedule__h1 {
     font-size: 4em;
