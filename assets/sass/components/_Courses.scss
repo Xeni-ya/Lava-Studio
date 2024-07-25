@@ -51,6 +51,11 @@
     right:20px;
     bottom:40px;
     cursor:pointer;
+
+    @media screen and (max-width: 375px) {
+        right:10px;
+        bottom:20px;
+    }
 }
 [data-title]::after {
     content: attr(data-title);
@@ -75,6 +80,7 @@
     @media screen and (max-width: 375px) {
         font-size: 1.4em;
         line-height: 28px;
+        letter-spacing: -1px;
     }
 }
 [data-title]:hover::after {
@@ -83,4 +89,9 @@
 .section-courses__watsapp-img {
     width:50px;
     height:50px;
+
+    @media screen and (max-width: 375px) {
+        width:40px;
+        height:40px;
+    }
 }
