@@ -642,6 +642,8 @@ a {
     padding-left: 0;
     margin-left: 0;
     margin-top: 50px;
+    position: absolute;
+    top: 0;
   }
 }
 
