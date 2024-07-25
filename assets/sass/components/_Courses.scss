@@ -9,20 +9,10 @@
     padding: 0 24px;
     align-items: center;
 }
-.section-courses__title,
-.section-courses__subtitle {
-    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .section-courses__programs {
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap:20px;
-/*
-    @media screen and (max-width: 874px) {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }*/
 }
 .section-courses__program {
     display:flex;
@@ -37,6 +27,7 @@
     line-height: 44px;
     letter-spacing: -1.6px;
     text-transform: uppercase;
+    text-align: center;
     color:$yellow-dark;
 }
 .section-courses__program-img{
@@ -47,17 +38,26 @@
 }
 .section-courses__program-text {
     width:100%;
-    text-align:center;
+    text-align:justify;
     flex-grow:1;
+    @media screen and (max-width: 375px) {
+        letter-spacing: -1px;
+    }
 }
 .section-courses__program-button {
     text-align:center;
+    padding: 20px 0;
+    margin: 10px 0;
 }
 .section-courses__watsapp {
     position:fixed;
-    right:10px;
-    bottom:10px;
+    right:20px;
+    bottom:90px;
     cursor:pointer;
+    @media screen and (max-width: 375px) {
+        right:10px;
+        bottom:20px;
+    }
 }
 [data-title]::after {
     content: attr(data-title);
@@ -69,6 +69,7 @@
     line-height: 44px;
     letter-spacing: -1.6px;
     color: $yellow-dark; 
+    background-color: #380a4de3;
     border: 1px solid $yellow-dark;
     min-block-size: max-content;
     opacity:0;
@@ -80,8 +81,11 @@
         line-height: 32px;
     }
     @media screen and (max-width: 375px) {
-        font-size: 1.4em;
+        bottom:50px;
+        left:-30px;
+        font-size: 1em;
         line-height: 28px;
+        letter-spacing: -1px;
     }
 }
 [data-title]:hover::after {
@@ -90,4 +94,8 @@
 .section-courses__watsapp-img {
     width:50px;
     height:50px;
+    @media screen and (max-width: 375px) {
+        width:40px;
+        height:40px;
+    }
 }
