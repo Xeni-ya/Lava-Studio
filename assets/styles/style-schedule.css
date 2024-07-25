@@ -445,6 +445,7 @@ a {
   font-family: "Poiret One", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .button:before,
@@ -966,62 +967,6 @@ a {
 .section-schedule .section-schedule__button {
   display: flex;
   justify-content: center;
-}
-.section-schedule .section-schedule__button-btn {
-  grid-column: 2;
-  max-width: 509px;
-  height: 79px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 20px 30px;
-  margin: 30px 0px;
-  position: relative;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: none;
-  font-size: 3em;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.section-schedule .section-schedule__button-btn:before,
-.section-schedule .section-schedule__button-btn:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  box-sizing: border-box;
-}
-.section-schedule .section-schedule__button-btn:before {
-  bottom: 0;
-  left: 0;
-  border-left: 1px solid #ffdc12;
-  border-top: 1px solid #ffdc12;
-  transition: 0s ease opacity 0.8s, 0.2s ease width 0.4s, 0.2s ease height 0.6s;
-}
-.section-schedule .section-schedule__button-btn:after {
-  top: 0;
-  right: 0;
-  border-right: 1px solid #ffdc12;
-  border-bottom: 1px solid #ffdc12;
-  transition: 0s ease opacity 0.4s, 0.2s ease width, 0.2s ease height 0.2s;
-}
-.section-schedule .section-schedule__button-btn:hover:before,
-.section-schedule .section-schedule__button-btn:hover:after {
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-}
-.section-schedule .section-schedule__button-btn:hover:before {
-  transition: 0s ease opacity 0s, 0.2s ease height, 0.2s ease width 0.2s;
-}
-.section-schedule .section-schedule__button-btn:hover:after {
-  transition: 0s ease opacity 0.4s, 0.2s ease height 0.4s, 0.2s ease width 0.6s;
-}
-.section-schedule .section-schedule__button-btn:hover {
-  background: #380a4d;
-  color: #ffdc12;
 }
 @media (max-width: 1412px) and (min-width: 790px) {
   .section-schedule .section-schedule__calendar-timeline {

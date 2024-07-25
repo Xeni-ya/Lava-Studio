@@ -22,10 +22,41 @@
     display: flex;
     gap: 25px;
     margin: 2rem;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: stretch;
+    flex-direction: column;
     align-content: space-around;
   }
-  
+
+  .section-price__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-price__base,
+  .section-price__group,
+  .section-price__single {
+    @media screen and (max-width: 1024px) {
+      max-width: 510px;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 377px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 320px) {
+      max-width: 272px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 327px;
+      width: 100%;
+    }
+  }
 }
