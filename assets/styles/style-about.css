@@ -429,10 +429,6 @@ a {
 }
 
 .button {
-  grid-column: 2;
-  max-width: 409px;
-  width: 100%;
-  height: 69px;
   text-decoration: none;
   display: inline-block;
   padding: 20px 30px;
@@ -441,16 +437,12 @@ a {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: none;
-  font-size: 2em;
   font-weight: 400;
   font-family: "Poiret One", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-align: center;
 }
-
-.button:before,
-.button:after {
+.button .button:before, .button .button:after {
   content: "";
   position: absolute;
   width: 0;
@@ -458,41 +450,47 @@ a {
   opacity: 0;
   box-sizing: border-box;
 }
-
-.button:before {
+.button .button:before {
   bottom: 0;
   left: 0;
   border-left: 1px solid #ffdc12;
   border-top: 1px solid #ffdc12;
   transition: 0s ease opacity 0.8s, 0.2s ease width 0.4s, 0.2s ease height 0.6s;
 }
-
-.button:after {
+.button .button:after {
   top: 0;
   right: 0;
   border-right: 1px solid #ffdc12;
   border-bottom: 1px solid #ffdc12;
   transition: 0s ease opacity 0.4s, 0.2s ease width, 0.2s ease height 0.2s;
 }
-
-.button:hover:before,
-.button:hover:after {
+.button .button:hover:before,
+.button .button:hover:after {
   height: 100%;
   width: 100%;
   opacity: 1;
 }
-
-.button.section-hero__button:hover:before {
+.button .button:hover:before {
   transition: 0s ease opacity 0s, 0.2s ease height, 0.2s ease width 0.2s;
 }
-
-.button.section-hero__button:hover:after {
+.button .button:hover:after {
   transition: 0s ease opacity 0.4s, 0.2s ease height 0.4s, 0.2s ease width 0.6s;
 }
-
-.button.section-hero__button:hover {
-  background: #380a4d;
+.button .button:hover {
+  background: rgba(255, 255, 255, 0.4);
   color: #ffdc12;
+}
+@media screen and (max-width: 1024px) {
+  .button {
+    max-width: 509px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .button {
+    font-size: 1.6em;
+    height: 59px;
+  }
 }
 
 .section-hero .section-hero__container, .section-link {
