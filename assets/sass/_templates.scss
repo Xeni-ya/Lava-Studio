@@ -40,6 +40,9 @@ a {
   line-height: 75px;
   letter-spacing: -2.56px;
   color: $yellow;
+  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
   @media screen and (max-width: 1024px) {
     line-height: 70px;
@@ -62,6 +65,9 @@ a {
   line-height: 50px;
   letter-spacing: -1.92px;
   color: $yellow;
+  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
   @media screen and (max-width: 768px) {
     font-size: 4em;
