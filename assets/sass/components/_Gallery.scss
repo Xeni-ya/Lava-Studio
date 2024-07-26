@@ -11,7 +11,19 @@
     font-weight: 400;
     line-height: 50px;
     text-align: center;
-    color: $yellow;
+    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 768px) {
+        font-size: 4em;
+        line-height: 44px;
+    }
+    
+    @media screen and (max-width: 376px) {
+        font-size: 2.4em;
+        line-height: 28px;
+    }
 }
 .section-gallery__paragraph{
     font-size: 2em;
@@ -22,6 +34,16 @@
     padding-top: 25vh;
     height: 50vh;
     margin-bottom: 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.8em;
+        line-height: 32px;
+    }
+    
+    @media screen and (max-width: 376px) {
+        font-size: 1.4em;
+        line-height: 28px;
+    }
 
 }
 
@@ -42,6 +64,7 @@
     padding: 0;
     flex-direction: column;
 } 
+
 }
 .footer__logo {
 max-width: 130px;
@@ -88,21 +111,21 @@ max-width: 100%;
 }
 
 .nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $yellow-dark;
-    font-family: "Poiret One", sans-serif;
-    font-size: 19px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    width: 125px;
-    }
-    .nav-item:hover {
-    color: $yellow-dark;
-    background-color: $pink;
-    }
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: $yellow-dark;
+font-family: "Poiret One", sans-serif;
+font-size: 19px;
+padding: 5px;
+margin: 5px;
+border-radius: 5px;
+width: 125px;
+}
+.nav-item:hover {
+color: $yellow-dark;
+background-color: $pink;
+}
 
 .container__logo {
     display: flex;
