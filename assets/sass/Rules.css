@@ -524,13 +524,6 @@ a {
 
 .text_section-rules {
   font-family: "Poiret One", sans-serif;
-  /*color: $yellow;
-  font-size: 20px;
-  font-weight: 300;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: left;*/
   margin-left: 113px;
   margin-right: 113px;
 }
@@ -543,14 +536,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  /*align-self: center;
-  max-width: 562px;
-  width: 100%;
-  margin-bottom: 40px;
-  font-size: 1.8em;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: -0.04em;*/
+}
+@media screen and (max-width: 1090px) {
+  .text_section-rules__text .section-rules__title {
+    font-size: 4em;
+  }
 }
 
 .section-link {
