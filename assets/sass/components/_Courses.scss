@@ -40,9 +40,34 @@
     width:100%;
     text-align:justify;
     flex-grow:1;
-    @media screen and (max-width: 375px) {
-        letter-spacing: -1px;
+}
+.section-courses__programs:first-of-type > .section-courses__program > .section-courses__program-title {
+    @media screen and (min-width: 988px) {
+      height: 88px;
     }
+}
+.section-courses__programs:first-of-type > .section-courses__program:first-child > .section-courses__program-title {
+    @media screen and ((min-width: 668px) and (max-width: 931px)) {
+        height: 88px;
+      }
+}
+.section-courses__programs:nth-of-type(3) > .section-courses__program > .section-courses__program-title {
+    @media screen and (min-width: 988px) {
+      height: 88px;
+    }
+}
+.section-courses__programs:nth-of-type(3) > .section-courses__program:nth-child(2) > .section-courses__program-title {
+    @media screen and ((min-width: 668px) and (max-width: 898px)) {
+        height: 88px;
+      }
+}
+.section-courses__programs:last-of-type > .section-courses__program > .section-courses__program-title {
+    @media screen and ((min-width: 988px) and (max-width: 1193px)) {
+      height: 88px;
+    }
+    @media screen and ((min-width: 676px) and (max-width: 805px)) {
+        height: 88px;
+      }
 }
 .section-courses__program-button {
     text-align:center;
