@@ -1,2 +1,27 @@
-// "  sass --watch assets/sass/certificates.scss assets/styles/style-certificates.css  "
+// "  sass --watch assets/sass/Certificates.scss assets/styles/style-certificates.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+
+.section-gallery {
+  @extend %container;
+
+  margin-top: 32px;
+
+  .title.section-gallery__title {
+    margin: auto;
+    font-size: 4.6em;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    color: $yellow;
+  }
+  .section-gallery__paragraph {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 44px;
+    color: $yellow;
+    text-align: center;
+    padding-top: 25vh;
+    height: 50vh;
+    margin-bottom: 0;
+  }
+}
