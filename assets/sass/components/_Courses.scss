@@ -124,3 +124,14 @@
         height:40px;
     }
 }
+.section-courses__scroll-button {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      right:10px;
+      bottom:20px;
+    }
+}
