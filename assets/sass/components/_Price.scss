@@ -1,21 +1,27 @@
 // "  sass --watch assets/sass/price.scss assets/styles/style-price.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
 
-
 .section-price {
   @extend %container;
 
   .section-price__h1 {
     grid-column: 2;
-    font-size: 6em;
+    font-size: 4.6em;
     background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #0B2349;
+    color: #0b2349;
     display: table;
-    margin: 20px auto;
-    padding: 20px;
+    padding: 40px 10px 30px 10px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 4em;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 2.4em;
+    }
   }
 
   .section-price__info {
@@ -29,6 +35,16 @@
 
   .section-price__button {
     display: flex;
+    justify-content: center;
+  }
+
+  .section-price__base-title,
+  .section-price__group-title,
+  .section-price__single-title {
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-transform: none;
     justify-content: center;
   }
 
@@ -57,6 +73,18 @@
     @media screen and (max-width: 375px) {
       max-width: 327px;
       width: 100%;
+    }
+  }
+
+  @media (max-width: 794px) and (min-width: 565px) {
+    .section-price__button-btn {
+      font-size: 2em;
+    }
+  }
+
+  @media (max-width: 566px) {
+    .section-price__button-btn {
+      font-size: 1.5em;
     }
   }
 }
