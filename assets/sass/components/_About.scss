@@ -1,19 +1,23 @@
 // "  sass --watch assets/sass/about.scss assets/styles/style-about.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-// * {
-//   outline: deeppink 1px solid;
-// } 
 
 .section-hero {
-  margin-top: 50px;
-  @extend %container;
-
+  margin-top: 124px;
+  
   .section-hero__container {
+    @extend %container;
+    
     display: grid;
     grid-template-columns: minmax(100px, 687px) minmax(100px, auto);
     grid-template-rows: repeat(3, auto);
     column-gap: 3.2em;
     justify-items: center;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, auto);
+      column-gap: 0;
+    }
   }
 
   .section-hero__img {
@@ -21,30 +25,10 @@
     width: 100%;
     grid-column: 2;
     grid-row: span 3;
-    margin-top: 20px;
 
-    @media screen and (max-width: 1024px) {
-      width: 315px;
-    }
-
-    @media screen and (max-width: 425px) {
-      max-width: 377px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 320px) {
-      max-width: 272px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
+    @media screen and (max-width: 768px) {
+      grid-column: 1;
+      grid-row: 3
     }
   }
 
@@ -61,42 +45,21 @@
     height: 136px;
 
     @media screen and (max-width: 1024px) {
-      max-width: 510px;
+      font-size: 5em;
     }
 
     @media screen and (max-width: 425px) {
-      max-width: 377px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
+      font-size: 4.6em;
     }
 
     @media screen and (max-width: 320px) {
-      max-width: 272px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
+      font-size: 3.6em;
     }
   }
 
-  .text.section-hero__text-one {
+  .text.section-hero__lead {
     white-space: pre-line; 
     grid-column: 1;
-    font-size: 2em;
-    @media screen and (max-width: 1024px) {
-      max-width: 495px;
-    }
-  
-    @media screen and (max-width: 425px) {
-      max-width: 377px;
-      width: 100%;
-    }
   
     @media screen and (max-width: 375px) {
       max-width: 327px;
@@ -107,33 +70,39 @@
       max-width: 272px;
       width: 100%;
     }
-  
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
+  }
+
+  .section-hero__holder {
+    margin-top: 124px;
+    border-radius: 15px;
+    background-color: $purple;
+    padding: 60px 130px;
+    grid-column: span 2;
+
+    @media screen and (max-width: 1024px) {
+      padding: 30px 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 32px;
+      padding: 25px 45px;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 20px 30px;
+    }
+
+    @media screen and (max-width: 320px) {
+      padding: 10px 20px;
     }
   }
 
-.section-hero__holder {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1216px;
-  width: 100%;
-  padding: 10px 80px 10px 80px;
-  gap: 10px;
-  border-radius: 5px;
-  background-color: $purple;
-}
+  .text.section-hero__text {
+    white-space: pre-line;
+    grid-column: 1 / 3;
+    margin-top: 32px;
+    place-items: center;
 
-  .text.section-hero__text-tow {
-    white-space: pre-line; 
-    font-size: 2.8em;
-    @media screen and (max-width: 1024px) {
-      max-width: 495px;
-    }
-  
     @media screen and (max-width: 425px) {
       max-width: 377px;
       width: 100%;
@@ -156,43 +125,29 @@
   }
 
   .button.section-hero__button {
-    // font-size: 3.1em;
-    // max-width: 509px;
-    // width: 100%;
-    // height: 79px;
-    // left: -19px;
-    // bottom: 5px;
+    grid-column: 1 / 3;
+    margin: 30px 20px;
 
     @media screen and (max-width: 1024px) {
       max-width: 509px;
+      width: 100%;
     }
   
     @media screen and (max-width: 425px) {
-      max-width: 377px;
-      width: 100%;
-    }
-  
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
-    }
-  
-    @media screen and (max-width: 320px) {
-      max-width: 272px;
-      width: 100%;
-    }
-  
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
+      font-size: 1.6em;
+      height: 59px;
     }
   }
 
   .section-hero__watsapp {
-      position:fixed;
-      right:10px;
-      bottom:10px;
-      cursor:pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    cursor: pointer;
+    @media screen and (max-width: 375px) {
+        right:10px;
+        bottom:20px;
+    }
   }
   [data-title]::after {
       content: attr(data-title);
@@ -204,8 +159,9 @@
       line-height: 44px;
       letter-spacing: -1.6px;
       color: $yellow-dark; 
+      background-color: #380a4de3;
       border: 1px solid $yellow-dark;
-      min-block-size: min-content;
+      min-block-size: max-content;
       opacity:0;
       transition: 0.5s;
       pointer-events: none; 
@@ -215,15 +171,34 @@
           line-height: 32px;
       }
       @media screen and (max-width: 375px) {
-          font-size: 1.4em;
+          bottom:50px;
+          left:-30px;
+          font-size: 1em;
           line-height: 28px;
+          letter-spacing: -1px;
       }
   }
   [data-title]:hover::after {
       opacity: 1; 
   }
-  .section-hero__watsapp {
-      width:40px;
-      height:40px;
+  .section-hero__watsapp-img {
+      width:50px;
+      height:50px;
+      @media screen and (max-width: 375px) {
+          width:40px;
+          height:40px;
+      }
+  }
+
+  .section-hero__scroll-top-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      right:10px;
+      bottom:20px;
+    }
   }
 }
