@@ -10,10 +10,10 @@
     display: grid;
     grid-template-columns: minmax(100px, 687px) minmax(100px, auto);
     grid-template-rows: repeat(3, auto);
-    column-gap: 3.2em;
+    column-gap: 32px;
     justify-items: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 991px) {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, auto);
       column-gap: 0;
@@ -26,9 +26,11 @@
     grid-column: 2;
     grid-row: span 3;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 991px) {
       grid-column: 1;
-      grid-row: 3
+      grid-row: 3;
+      width: 100%;
+      max-width: 704px;
     }
   }
 
@@ -82,8 +84,8 @@
     @media screen and (max-width: 1024px) {
       padding: 30px 60px;
     }
-
-    @media screen and (max-width: 768px) {
+    
+    @media screen and (max-width: 991px) {
       margin-top: 32px;
       padding: 25px 45px;
     }
@@ -100,8 +102,12 @@
   .text.section-hero__text {
     white-space: pre-line;
     grid-column: 1 / 3;
-    margin-top: 32px;
-    place-items: center;
+    margin-top: 62px;
+    text-align: center;
+
+    @media screen and (max-width: 991px) {
+      margin-top: 0;
+    }
 
     @media screen and (max-width: 425px) {
       max-width: 377px;
