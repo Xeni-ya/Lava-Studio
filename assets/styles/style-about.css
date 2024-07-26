@@ -410,8 +410,9 @@ a {
 .text {
   font-size: 2em;
   font-weight: 400;
-  line-height: 44px;
-  letter-spacing: -1.6px;
+  font-style: normal;
+  line-height: 1.5;
+  color: #ffdc12;
 }
 @media screen and (max-width: 768px) {
   .text {
@@ -444,6 +445,7 @@ a {
   font-family: "Poiret One", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .button:before,
@@ -492,215 +494,16 @@ a {
   color: #ffdc12;
 }
 
-.section-link, .section-hero .section-hero__container {
+.section-link {
   max-width: 1280px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 32px;
 }
 @media screen and (max-width: 767px) {
-  .section-link, .section-hero .section-hero__container {
+  .section-link {
     padding: 0 20px;
   }
-}
-
-.section-hero {
-  margin-top: 50px;
-}
-.section-hero .section-hero__container {
-  display: grid;
-  grid-template-columns: minmax(100px, 389px) minmax(100px, 779px);
-  grid-template-rows: repeat(3, auto);
-  column-gap: 3.2em;
-}
-.section-hero .section-hero__img {
-  max-width: 389px;
-  width: 100%;
-  grid-row: span 3;
-  margin-top: 20px;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .section-hero__img {
-    width: 315px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .section-hero__img {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__img {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .section-hero__img {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__img {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .page-title.section-hero__title {
-  grid-column: 2;
-  font-size: 6em;
-  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-  display: table;
-  width: 100%;
-  height: 136px;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 510px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .page-title.section-hero__title {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .section-hero__text {
-  font-size: 3.2em;
-  grid-column: 2;
-  margin-top: 10px;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .section-hero__text {
-    max-width: 495px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .section-hero__text {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__text {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .section-hero__text {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .section-hero__text {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .button.section-hero__button {
-  font-size: 3.1em;
-  max-width: 509px;
-  width: 100%;
-  height: 79px;
-  left: -19px;
-  bottom: 5px;
-}
-@media screen and (max-width: 1024px) {
-  .section-hero .button.section-hero__button {
-    max-width: 509px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section-hero .button.section-hero__button {
-    max-width: 377px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .button.section-hero__button {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-hero .button.section-hero__button {
-    max-width: 272px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero .button.section-hero__button {
-    max-width: 327px;
-    width: 100%;
-  }
-}
-.section-hero .section-courses__watsapp {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  cursor: pointer;
-}
-.section-hero [data-title]::after {
-  content: attr(data-title);
-  position: absolute;
-  bottom: 60px;
-  left: -100px;
-  font-size: 2em;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: -1.6px;
-  color: #E4B548;
-  border: 1px solid #E4B548;
-  min-block-size: min-content;
-  opacity: 0;
-  transition: 0.5s;
-  pointer-events: none;
-  padding: 0.5em;
-}
-@media screen and (max-width: 768px) {
-  .section-hero [data-title]::after {
-    font-size: 1.8em;
-    line-height: 32px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .section-hero [data-title]::after {
-    font-size: 1.4em;
-    line-height: 28px;
-  }
-}
-.section-hero [data-title]:hover::after {
-  opacity: 1;
-}
-.section-hero .section-courses__watsapp-img {
-  width: 40px;
-  height: 40px;
 }
 
 .section-link {
@@ -753,6 +556,7 @@ a {
   font-weight: 400;
   color: #fff;
   padding: 20px;
+  max-width: 100%;
 }
 @media screen and (max-width: 768px) {
   .footer__div {
@@ -786,15 +590,6 @@ a {
 .header__div {
   max-width: 100%;
 }
-@media screen and (max-width: 987px) {
-  .header__div {
-    display: flex;
-    max-width: 90%;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
 
 .header__logo {
   max-width: 228px;
@@ -802,7 +597,7 @@ a {
 
 .navbar {
   background-color: #380a4d;
-  padding-left: 70px;
+  padding-left: 0px;
   max-width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -819,8 +614,8 @@ a {
   background-color: #E4B548;
   font-family: "Poiret One", sans-serif;
   font-size: 19px;
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 3px;
   border-radius: 5px;
   width: 125px;
 }
@@ -838,6 +633,7 @@ a {
 @media screen and (max-width: 987px) {
   .container__logo {
     max-width: 50%;
+    margin-top: 50px;
   }
 }
 
@@ -846,6 +642,8 @@ a {
     padding-left: 0;
     margin-left: 0;
     margin-top: 50px;
+    position: absolute;
+    top: 0;
   }
 }
 

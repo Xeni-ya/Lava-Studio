@@ -13,6 +13,7 @@
   font-weight: 400;
   color: $white;
   padding: 20px;
+  max-width: 100%;
   @media screen and (max-width: 768px) {
     padding: 0;
     flex-direction: column;
@@ -40,13 +41,6 @@
 
 .header__div {
   max-width: 100%;
-  @media screen and (max-width: 987px) {
-    display: flex;
-    max-width: 90%;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-  } 
 }
 .header__logo {
   max-width: 228px;
@@ -54,7 +48,7 @@
 
 .navbar {
   background-color: #380a4d;
-  padding-left: 70px;
+  padding-left: 0px;
   max-width: 100%;
   @media screen and (max-width: 768px) {
     padding: 0;
@@ -69,8 +63,8 @@
   background-color: $yellow-dark;
   font-family: "Poiret One", sans-serif;
   font-size: 19px;
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 3px;
   border-radius: 5px;
   width: 125px;
   }
@@ -85,6 +79,7 @@
     align-items: center;
     @media screen and (max-width: 987px) {
       max-width: 50%;
+      margin-top: 50px;
     } 
   }
 
@@ -93,6 +88,8 @@
       padding-left: 0;
       margin-left: 0;
       margin-top: 50px;
+      position: absolute;
+      top: 0;
     }
   }
   .navbar-toggler-icon{
