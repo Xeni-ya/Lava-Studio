@@ -126,6 +126,9 @@ a {
 //====================Кнопки=====================//
 
 .button {
+  max-width: 409px;
+  width: 100%;
+  height: 69px;
   text-decoration: none;
   display: inline-block;
   padding: 20px 30px;
@@ -134,6 +137,7 @@ a {
   color: $white;
   border: 1px solid $grey;
   background: none;
+  font-size: 2em;
   font-weight: 400;
   font-family: "Poiret One", sans-serif;
   text-transform: uppercase;
