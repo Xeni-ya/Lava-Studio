@@ -556,6 +556,7 @@ a {
   font-weight: 400;
   color: #fff;
   padding: 20px;
+  max-width: 100%;
 }
 @media screen and (max-width: 768px) {
   .footer__div {
@@ -589,15 +590,6 @@ a {
 .header__div {
   max-width: 100%;
 }
-@media screen and (max-width: 987px) {
-  .header__div {
-    display: flex;
-    max-width: 90%;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
 
 .header__logo {
   max-width: 228px;
@@ -605,7 +597,7 @@ a {
 
 .navbar {
   background-color: #380a4d;
-  padding-left: 70px;
+  padding-left: 0px;
   max-width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -622,8 +614,8 @@ a {
   background-color: #E4B548;
   font-family: "Poiret One", sans-serif;
   font-size: 19px;
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 3px;
   border-radius: 5px;
   width: 125px;
 }
@@ -641,6 +633,7 @@ a {
 @media screen and (max-width: 987px) {
   .container__logo {
     max-width: 50%;
+    margin-top: 50px;
   }
 }
 
@@ -649,6 +642,8 @@ a {
     padding-left: 0;
     margin-left: 0;
     margin-top: 50px;
+    position: absolute;
+    top: 0;
   }
 }
 
