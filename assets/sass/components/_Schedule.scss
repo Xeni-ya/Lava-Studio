@@ -20,7 +20,7 @@
     }
 
     @media screen and (max-width: 375px) {
-      font-size: 2.4em;
+      font-size: 3.6em;
     }
   }
 
@@ -34,20 +34,13 @@
   // в 1 строку
   .section-schedule__calendar-timeline {
     display: grid;
-    grid-template-rows: repeat(12, 150px);
+    grid-template-rows: repeat(12, 180px);
+    color: #ffdc12;
   }
 
-  // в 2 строки
-  .section-schedule__calendar-timeline2 {
-    display: none;
-  }
-
-  // в 3 строки
-  .section-schedule__calendar-timeline3 {
-    display: none;
-  }
-
-  // в 6 строки
+  // в 2,3,4 строки
+  .section-schedule__calendar-timeline2,
+  .section-schedule__calendar-timeline3,
   .section-schedule__calendar-timeline4 {
     display: none;
   }
@@ -71,7 +64,8 @@
 
   .events {
     display: grid;
-    grid-template-rows: repeat(12, 150px);
+    grid-template-rows: repeat(12, 180px);
+    // grid-template-rows: repeat(12, minmax(180px, 1fr));
     border-radius: 5px;
   }
 
@@ -172,7 +166,7 @@
     grid-row-end: 13;
   }
 
-  .title {
+  .titles {
     font-size: 2em;
     line-height: 20px;
     letter-spacing: 0px;
@@ -362,50 +356,37 @@
 
   // media
   @media (max-width: 1412px) and (min-width: 790px) {
-    .section-schedule__calendar-timeline {
+    .section-schedule__calendar-timeline,
+    .section-schedule__calendar-timeline3,
+    .section-schedule__calendar-timeline4 {
       display: none;
     }
 
     .section-schedule__calendar-timeline2 {
       display: grid;
-      grid-template-rows: repeat(26, 150px);
-    }
-
-    .section-schedule__calendar-timeline3 {
-      display: none;
-    }
-
-    .section-schedule__calendar-timeline4 {
-      display: none;
+      grid-template-rows: repeat(26, 180px);
+      color: #ffdc12;
     }
   }
 
   @media (max-width: 1570px) {
-    .time {
-      font-size: 1.5em;
-    }
-
+    .time,
     .title {
       font-size: 1.5em;
     }
   }
 
   @media (max-width: 794px) and (min-width: 565px) {
-    .section-schedule__calendar-timeline {
-      display: none;
-    }
-
-    .section-schedule__calendar-timeline2 {
+    .section-schedule__calendar-timeline,
+    .section-schedule__calendar-timeline2,
+    .section-schedule__calendar-timeline4 {
       display: none;
     }
 
     .section-schedule__calendar-timeline3 {
       display: grid;
-      grid-template-rows: repeat(39, 150px);
-    }
-
-    .section-schedule__calendar-timeline4 {
-      display: none;
+      grid-template-rows: repeat(39, 180px);
+      color: #ffdc12;
     }
 
     .section-schedule__button-btn {
@@ -414,25 +395,32 @@
   }
 
   @media (max-width: 566px) {
-    .section-schedule__calendar-timeline {
-      display: none;
-    }
-
-    .section-schedule__calendar-timeline2 {
-      display: none;
-    }
-
+    .section-schedule__calendar-timeline,
+    .section-schedule__calendar-timeline2,
     .section-schedule__calendar-timeline3 {
       display: none;
     }
 
     .section-schedule__calendar-timeline4 {
       display: grid;
-      grid-template-rows: repeat(78, 150px);
+      grid-template-rows: repeat(78, 180px);
+      color: #ffdc12;
     }
 
     .section-schedule__button-btn {
       font-size: 1.5em;
+    }
+  }
+
+  .section-schedule__scroll-top-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      right: 10px;
+      bottom: 20px;
     }
   }
 }

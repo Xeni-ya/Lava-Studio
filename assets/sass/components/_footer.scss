@@ -1,6 +1,7 @@
 // "  sass --watch assets/sass/index.scss assets/styles/style.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-.footer_container { 
+
+.footer-container { 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,22 +18,21 @@
   @media screen and (max-width: 768px) {
     padding: 0;
     flex-direction: column;
-  } 
+  }
 }
-.footer-container_logo {
+.footer-container__logo {
   max-width: 130px;
-
 }
-.footer-container_adress {
+.footer-container__adress {
   font-size: 2.5rem;
   color: $yellow;
 }
-.footer-container_contact-img {
+.footer-container__contact-img {
   padding: 10px;
   max-width: 50px;
 }
 
-.footer-container_contact-img:hover {
+.footer-container__contact-img:hover {
   color: beige;
   transform: rotate(20deg);
 }
@@ -51,10 +51,21 @@
   background-color: #380a4d;
   padding-left: 100px;
   max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
   @media screen and (max-width: 768px) {
     padding: 0;
     background-color: none;
-  } 
+  }
+}
+
+  .collapse {
+    position: fixed;
+    @media screen and (max-width: 980px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 
 .navbar-nav {
@@ -77,36 +88,36 @@
     padding: 5px;
     margin-left: 0;
   }
-  }
-  .nav-item:hover {
+}
+.nav-item:hover {
   color: $yellow-dark;
   background-color: $pink;
-  }
+}
 
-  .navbar-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media screen and (max-width: 987px) {
-      max-width: 50%;
-      margin-top: 50px;
-    } 
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 987px) {
+    max-width: 50%;
+    margin-top: 50px;
   }
+}
 
-  .container {
-    @media screen and (max-width: 987px) {
-      padding-left: 0;
-      margin-left: 0;
-      margin-top: 50px;
-      position: absolute;
-      top: 0;
-    }
+.container {
+  @media screen and (max-width: 987px) {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
   }
-  .navbar-toggler-icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    @media screen and (max-width: 987px) {
+}
+.navbar-toggler-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  @media screen and (max-width: 987px) {
     position: relative;
     display: flex;
     align-items: center;
@@ -114,26 +125,27 @@
     background-image: none !important;
   }
 }
-.navbar-toggler-icon::before{
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 3px;
-    height: 3px;
-    width: 90%;
-    background: $yellow-dark;
+
+.navbar-toggler-icon::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  height: 3px;
+  width: 90%;
+  background: $yellow-dark;
 }
-.navbar-toggler-icon::after{
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    left: 3px;
-    height: 3px;
-    width: 90%;
-    background: $yellow-dark;
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 3px;
+  height: 3px;
+  width: 90%;
+  background: $yellow-dark;
 }
-.navbar-toggler-icon span{
-    height: 3px;
-    width: 90%;
-    background: $yellow-dark;
+.navbar-toggler-icon span {
+  height: 3px;
+  width: 90%;
+  background: $yellow-dark;
 }
