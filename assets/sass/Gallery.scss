@@ -3,7 +3,7 @@
 @import "vars";
 @import "templates";
 
+@import "components/Gallery";
 @import "components/header"; //по аналогии импортируем свой раздел
 @import "components/main";
 @import "components/footer";
-@import "components/Gallery";
