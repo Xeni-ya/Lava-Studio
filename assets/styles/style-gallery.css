@@ -697,6 +697,21 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .section-gallery__title {
+    font-size: 4em;
+    line-height: 44px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-gallery__title {
+    font-size: 2.4em;
+    line-height: 28px;
+  }
 }
 .section-link a {
   text-decoration: none;
@@ -727,162 +742,18 @@ a {
   }
 }
 
-.footer_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  max-height: 150px;
-  font-family: "Poiret One", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #fff;
-  padding: 20px;
-  max-width: 100%;
-}
 @media screen and (max-width: 768px) {
-  .footer_container {
-    padding: 0;
-    flex-direction: column;
+  .section-gallery__paragraph {
+    font-size: 1.8em;
+    line-height: 32px;
   }
 }
-
-.footer-container_logo {
-  max-width: 130px;
-}
-
-.footer-container_adress {
-  font-size: 2.5rem;
-  color: #ffdc12;
-}
-
-.footer-container_contact-img {
-  padding: 10px;
-  max-width: 50px;
-}
-
-.footer-container_contact-img:hover {
-  color: beige;
-  transform: rotate(20deg);
-}
-
-.wrapper {
-  max-width: 100%;
-}
-
-.navbar-brand__logo {
-  max-width: 228px;
-}
-@media screen and (max-width: 768px) {
-  .navbar-brand__logo {
-    max-width: 180px;
+@media screen and (max-width: 375px) {
+  .section-gallery__paragraph {
+    font-size: 1.4em;
+    line-height: 28px;
+    max-width: auto;
   }
-}
-
-.navbar {
-  background-color: #380a4d;
-  padding-left: 100px;
-  max-width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .navbar {
-    padding: 0;
-    background-color: none;
-  }
-}
-
-.navbar-nav {
-  max-width: 100%;
-}
-
-.nav-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #E4B548;
-  font-family: "Poiret One", sans-serif;
-  font-size: 19px;
-  padding: 2px;
-  margin: 3px;
-  border-radius: 5px;
-  width: 125px;
-}
-@media screen and (max-width: 1180px) and (min-width: 980px) {
-  .nav-item {
-    max-width: fit-content;
-    padding: 5px;
-    margin-left: 0;
-  }
-}
-
-.nav-item:hover {
-  color: #E4B548;
-  background-color: #ad10d3;
-}
-
-.navbar-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 987px) {
-  .navbar-logo {
-    max-width: 50%;
-    margin-top: 50px;
-  }
-}
-
-@media screen and (max-width: 987px) {
-  .container {
-    padding-left: 0;
-    margin-left: 0;
-    margin-top: 50px;
-    position: absolute;
-    top: 0;
-  }
-}
-
-.navbar-toggler-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 15px;
-}
-@media screen and (max-width: 987px) {
-  .navbar-toggler-icon {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: none !important;
-  }
-}
-
-.navbar-toggler-icon::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 3px;
-  height: 3px;
-  width: 90%;
-  background: #E4B548;
-}
-
-.navbar-toggler-icon::after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 3px;
-  height: 3px;
-  width: 90%;
-  background: #E4B548;
-}
-
-.navbar-toggler-icon span {
-  height: 3px;
-  width: 90%;
-  background: #E4B548;
 }
 
 /*# sourceMappingURL=style-gallery.css.map */
