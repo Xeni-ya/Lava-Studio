@@ -1,6 +1,10 @@
 // "  sass --watch assets/sass/index.scss assets/styles/style.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
+<<<<<<< HEAD
+.footer-container { 
+=======
 .footer_container {
+>>>>>>> main
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,19 +23,19 @@
     flex-direction: column;
   }
 }
-.footer-container_logo {
+.footer-container__logo {
   max-width: 130px;
 }
-.footer-container_adress {
+.footer-container__adress {
   font-size: 2.5rem;
   color: $yellow;
 }
-.footer-container_contact-img {
+.footer-container__contact-img {
   padding: 10px;
   max-width: 50px;
 }
 
-.footer-container_contact-img:hover {
+.footer-container__contact-img:hover {
   color: beige;
   transform: rotate(20deg);
 }
@@ -50,11 +54,22 @@
   background-color: #380a4d;
   padding-left: 100px;
   max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
   @media screen and (max-width: 768px) {
     padding: 0;
     background-color: none;
   }
 }
+
+  .collapse {
+    position: fixed;
+    @media screen and (max-width: 980px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 
 .navbar-nav {
   max-width: 100%;
