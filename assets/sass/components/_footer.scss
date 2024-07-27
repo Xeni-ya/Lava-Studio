@@ -1,6 +1,6 @@
 // "  sass --watch assets/sass/index.scss assets/styles/style.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-.footer-container { 
+.footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -35,6 +35,7 @@
   color: beige;
   transform: rotate(20deg);
 }
+
 .footer-container__link {
   color: $pale-purple;
   font-size: 1.5em;
