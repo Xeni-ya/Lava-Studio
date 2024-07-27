@@ -35,6 +35,7 @@
   .section-schedule__calendar-timeline {
     display: grid;
     grid-template-rows: repeat(12, 150px);
+    color: #ffdc12;
   }
 
   // в 2,3,4 строки
@@ -165,7 +166,7 @@
     grid-row-end: 13;
   }
 
-  .title {
+  .titles {
     font-size: 2em;
     line-height: 20px;
     letter-spacing: 0px;
@@ -364,6 +365,7 @@
     .section-schedule__calendar-timeline2 {
       display: grid;
       grid-template-rows: repeat(26, 150px);
+      color: #ffdc12;
     }
   }
 
@@ -384,6 +386,7 @@
     .section-schedule__calendar-timeline3 {
       display: grid;
       grid-template-rows: repeat(39, 150px);
+      color: #ffdc12;
     }
 
     .section-schedule__button-btn {
@@ -401,6 +404,7 @@
     .section-schedule__calendar-timeline4 {
       display: grid;
       grid-template-rows: repeat(78, 150px);
+      color: #ffdc12;
     }
 
     .section-schedule__button-btn {
