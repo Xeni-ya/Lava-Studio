@@ -20,7 +20,7 @@
     }
 
     @media screen and (max-width: 375px) {
-      font-size: 2.4em;
+      font-size: 3.6em;
     }
   }
 
@@ -58,6 +58,17 @@
       height: auto;
       padding: 10px;
       margin: 10px;
+    }
+  }
+  .section-price__scroll-top-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      right: 10px;
+      bottom: 20px;
     }
   }
 }

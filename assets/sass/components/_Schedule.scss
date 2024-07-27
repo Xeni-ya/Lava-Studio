@@ -20,7 +20,7 @@
     }
 
     @media screen and (max-width: 375px) {
-      font-size: 2.4em;
+      font-size: 3.6em;
     }
   }
 
@@ -34,7 +34,7 @@
   // в 1 строку
   .section-schedule__calendar-timeline {
     display: grid;
-    grid-template-rows: repeat(12, 150px);
+    grid-template-rows: repeat(12, 180px);
     color: #ffdc12;
   }
 
@@ -64,8 +64,8 @@
 
   .events {
     display: grid;
-    grid-template-rows: repeat(12, 150px);
-    // grid-template-rows: repeat(12, minmax(150px, 1fr));
+    grid-template-rows: repeat(12, 180px);
+    // grid-template-rows: repeat(12, minmax(180px, 1fr));
     border-radius: 5px;
   }
 
@@ -364,7 +364,7 @@
 
     .section-schedule__calendar-timeline2 {
       display: grid;
-      grid-template-rows: repeat(26, 150px);
+      grid-template-rows: repeat(26, 180px);
       color: #ffdc12;
     }
   }
@@ -385,7 +385,7 @@
 
     .section-schedule__calendar-timeline3 {
       display: grid;
-      grid-template-rows: repeat(39, 150px);
+      grid-template-rows: repeat(39, 180px);
       color: #ffdc12;
     }
 
@@ -403,12 +403,24 @@
 
     .section-schedule__calendar-timeline4 {
       display: grid;
-      grid-template-rows: repeat(78, 150px);
+      grid-template-rows: repeat(78, 180px);
       color: #ffdc12;
     }
 
     .section-schedule__button-btn {
       font-size: 1.5em;
+    }
+  }
+
+  .section-schedule__scroll-top-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      right: 10px;
+      bottom: 20px;
     }
   }
 }

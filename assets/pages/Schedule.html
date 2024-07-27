@@ -14,10 +14,11 @@
 <body>
   <!-- HEADER Анна -->
   <header class="header">
-    <div class="header__div">
-      <div class="container__logo">
-        <a class="navbar-brand" href="/assets/pages/About.html"><img class="header__logo"
-            src="../images/section-hero-logo.png" alt="logo"></a>
+    <div class="wrapper">
+      <div class="navbar-logo">
+        <a class="navbar-brand" href="/assets/pages/About.html">
+          <img class="navbar-brand__logo" src="../images/section-hero-logo.png" alt="logo" id="top">
+        </a>
       </div>
       <div class="container">
         <nav class="navbar navbar-expand-lg">
@@ -25,7 +26,7 @@
             <button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
               aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"> <span> </span></span>
+              <span class="navbar-toggler-icon "> <span> </span></span>
             </button>
             <div class="collapse navbar-collapse position-absolute top-0 end-0" id="navbarNav">
               <ul class="navbar-nav">
@@ -250,7 +251,7 @@
           <p class="time-marker"><time>20:00</time></p>
         </div>
         <div class="section-schedule__calendar-days">
-          <div class="day mon">
+          <div class="day-mon">
             <div class="date">
               <p class="date-day">Понедельник</p>
             </div>
@@ -284,7 +285,7 @@
               <div class="event start-12 end-12 securities"></div>
             </div>
           </div>
-          <div class="day tues">
+          <div class="day-tues">
             <div class="date">
               <p class="date-day">Вторник</p>
             </div>
@@ -325,7 +326,7 @@
               </div>
             </div>
           </div>
-          <div class="day wed">
+          <div class="day-wed">
             <div class="date">
               <p class="date-day">Среда</p>
             </div>
@@ -356,7 +357,7 @@
               <div class="event start-12 end-12 securities"></div>
             </div>
           </div>
-          <div class="day thurs">
+          <div class="day-thurs">
             <div class="date">
               <p class="date-day">Четверг</p>
             </div>
@@ -387,7 +388,7 @@
               <div class="event start-12 end-12 securities"></div>
             </div>
           </div>
-          <div class="day fri">
+          <div class="day-fri">
             <div class="date">
               <p class="date-day">Пятница</p>
             </div>
@@ -415,7 +416,7 @@
               <div class="event start-12 end-12 securities"></div>
             </div>
           </div>
-          <div class="day sut">
+          <div class="day-sut">
             <div class="date">
               <p class="date-day">Суббота</p>
             </div>
@@ -461,23 +462,35 @@
           Зарегистрироваться
         </a>
       </div>
+      <a href="#top" class="section-schedule__scroll-top-btn">
+        <img src="../images/scroll-top.png" alt="scroll-top-img" />
+      </a>
     </section>
     <!-- КОНЕЦ СЕКЦИИ “Расписание” Елена -->
   </main>
 
   <!-- FOOTER Анна -->
   <footer class="footer">
-    <div class="footer__div">
-      <img src="../images/section-hero-logo.png" class="footer__logo" alt="footer__logo">
-      <div class="footer__adress">Kääntopiiri 2, Espoo</div>
-      <div class="footer__contacts">
-        <a href="https://www.instagram.com/lava_espoo/?igsh=dGVuY2o0aGRwb2R2&utm_source=qr"><img class="footer__contact"
-            src="../images/insta.png" alt="instagram"></a>
-        <a href="https://www.facebook.com/people/Lava-dance-music-education/61560395152406/"><img
-            class="footer__contact" src="../images/face.png" alt="facebook"></a>
-        <a href="tel:+35844974378"><img class="footer__contact" src="../images/phone.png" alt="phone number"></a>
-        <a href="tel:+35844974378"><img class="footer__contact" src="../images/telegram.png" alt="telegram"></a>
-        <a href="tel:+35844974378"><img class="footer__contact" src="../images/whatsapp.png" alt="whatsapp"></a>
+    <div class="footer-container">
+      <img src="../images/section-hero-logo.png" class="footer-container__logo" alt="logo">
+      <div class="footer-container__adress">
+        Kääntopiiri 2, Espoo
+      </div>
+      <div class="footer-container__contacts">
+        <a href="https://www.instagram.com/lava_espoo/?igsh=dGVuY2o0aGRwb2R2&utm_source=qr">
+          <img class="footer-container__contact-img" src="../images/insta.png" alt="instagram">
+        </a>
+        <a href="https://www.facebook.com/people/Lava-dance-music-education/61560395152406/">
+          <img class="footer-container__contact-img" src="../images/face.png" alt="facebook">
+        </a>
+        <a href="tel:+35844974378">
+          <img class="footer-container__contact-img" src="../images/phone.png" alt="phone number">
+        </a>
+        <a href="tel:+35844974378">
+          <img class="footer-container__contact-img" src="../images/telegram.png" alt="telegram"></a>
+        <a href="tel:+35844974378">
+          <img class="footer-container__contact-img" src="../images/whatsapp.png" alt="whatsapp">
+        </a>
       </div>
     </div>
   </footer>

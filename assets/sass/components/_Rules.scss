@@ -4,34 +4,103 @@
 .section-rules {
   @extend %container;
   background-color: $deepPurple;
-}
-  .section-rules__title {
-  font-family: "Poiret One", sans-serif;
-  color: $yellow;
-  font-size: 40px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  
+  .title.section-rules__title {
+    font-family: "Poiret One", sans-serif;
+    color: $yellow;
+    margin-top:72px;
+    display: flex;
+    justify-content: center;
+    font-size: 4.6em;
+    font-weight: 400;
+    line-height: 50px;
+    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-.text.section-rules__text {
-  font-family: "Poiret One", sans-serif;
-  color: $yellow;
-  font-size: 20px;
-  font-weight: 300;
-  display: flex;
-  justify-content: center;
-  text-align: left;
+  .text_section-rules {
+    font-family: "Poiret One", sans-serif;
   margin-left: 113px;
   margin-right: 113px;
+  }
+
+  .text_section-rules__text {
+    font-family: "Poiret One", sans-serif;
+    color: $yellow;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
   
-  /*align-self: center;
-  max-width: 562px;
-  width: 100%;
-  margin-bottom: 40px;
-  font-size: 1.8em;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: -0.04em;*/
+  @media screen and (max-width: 1090px) {
+    .section-rules__title {
+      font-size: 4em;
+    }
+  }
+
+  .section-rules__watsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    cursor: pointer;
+    @media screen and (max-width: 375px) {
+        right:10px;
+        bottom:20px;
+    }
+  }
+  [data-title]::after {
+      content: attr(data-title);
+      position:absolute;
+      bottom:60px;
+      left:-100px;
+      font-size: 2em;
+      font-weight: 400;
+      line-height: 44px;
+      letter-spacing: -1.6px;
+      color: $yellow-dark; 
+      background-color: #380a4de3;
+      border: 1px solid $yellow-dark;
+      min-block-size: max-content;
+      opacity:0;
+      transition: 0.5s;
+      pointer-events: none; 
+      padding: 0.5em; 
+      @media screen and (max-width: 768px) {
+          font-size: 1.8em;
+          line-height: 32px;
+      }
+      @media screen and (max-width: 375px) {
+          bottom:50px;
+          left:-30px;
+          font-size: 1em;
+          line-height: 28px;
+          letter-spacing: -1px;
+      }
+  }
+  [data-title]:hover::after {
+      opacity: 1; 
+  }
+  .section-rules__watsapp-img {
+      width:50px;
+      height:50px;
+      @media screen and (max-width: 375px) {
+          width:40px;
+          height:40px;
+      }
+  }
+
+  .section-rules__scroll-top-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      right:10px;
+      bottom:20px;
+    }
+  }
 }
