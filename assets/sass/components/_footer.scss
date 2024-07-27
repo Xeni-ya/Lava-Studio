@@ -51,10 +51,21 @@
   background-color: #380a4d;
   padding-left: 100px;
   max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
   @media screen and (max-width: 768px) {
     padding: 0;
     background-color: none;
   } 
+  }
+
+  .collapse {
+    position: fixed;
+    @media screen and (max-width: 980px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 
 .navbar-nav {
