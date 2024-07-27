@@ -8,6 +8,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
+    .section-link__title {
+      color: $deepPurple;
+    }
+
   a {
     text-decoration: none;
     display: inline-block;

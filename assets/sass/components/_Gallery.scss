@@ -12,6 +12,7 @@
     line-height: 50px;
     text-align: center;
     background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 

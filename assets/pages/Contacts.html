@@ -7,25 +7,25 @@
   <link rel="shortcut icon" href="../icons/favicon.svg" type="image/svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/style-contacts.css">
-  <link rel="stylesheet" href="../styles/style-footer.css">
   <title>Контакты</title>
 </head>
 
 <body>
-<!-- HEADER Анна -->
-<header>
-  <div class="wrapper" >
-    <div class="navbar-logo">
-      <a class="navbar-brand" href="/assets/pages/About.html"><img class="navbar-brand__logo" src="../images/section-hero-logo.png" alt="logo"></a>
-    </div>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid text-dark">
-          <button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <header class="header">
+    <div class="container header__container">
+      <nav class="navbar navbar-expand-lg header__wrap" id="top">
+        <div class=" text-dark header__wrapper-nav">
+          <button class="navbar-toggler position-absolute top-0 start-0 header__button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "> <span> </span></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse header__navbar" id="navbarNav">
+            <ul class="navbar-nav header__ul">
               <li class="nav-item">
                 <a class="nav-link-Home" aria-current="page" href="../pages/About.html">Home</a>
               </li>
@@ -34,7 +34,8 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link-schedule" href="./Schedule.html">Расписание</a>
-              </li><li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link-price" href="../pages/Price.html">Прайс</a>
               </li>
               <li class="nav-item">
@@ -57,51 +58,90 @@
         </div>
       </nav>
     </div>
-</div>
-</header>
-<!-- КОНЕЦ HEADER Анна -->
-  
-  <main>
-    <!-- СЕКЦИЯ “Контакты” Anastasia -->
-    <section class="section-contacts">
-      <div class="section-contacts__conteiner">
-        <h1 class="section-contacts__title">Контакты</h1>
-        <p class="section-contacts__subtitle">Если у Вас возникли вопросы, свяжитесь с нами любым удобным для Вас способом:</p>
-        <div class="section-contacts__contacts">
-        <a href="https://t.me/Razhatawka"><img class="section-contacts__logo" src="../images/telegram.png" alt="logo telegram">Telegram</a>
-        <a href="https://wa.me/358449774378"><img class="section-contacts__logo" src="../images/whatsapp.png" alt="logo whatsapp">WhatsApp</a>
-        <a href="https://www.instagram.com/lava_espoo?igsh=dGVuY2o0aGRwb2R2&utm_source=qr"><img class="section-contacts__logo" src="../images/insta.png" alt="logo instagram">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61560395152406"><img class="section-contacts__logo" src="../images/face.png" alt="logo facebook">Facebook</a>
-        <a href="mailto:lava.espoo.studio@gmail.com"><img class="section-contacts__logo" src="../images/mail.png" alt="logo mail">Почта</a>
-        <a href="tel:+358449774378"><img class="section-contacts__logo" src="../images/phone.png" alt="logo phone">Телефон</a>
-        </div>
-        <div class="section-contacts__map-conteiner">
-          <p class="section-contacts__map-conteiner__paragraph">Мы находимся по адресу: Kääntöpiiri 2, Espoo</p>
-          <iframe class="section-contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.5152124044596!2d24.720922977106504!3d60.172204075033406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df4f0941b456b%3A0x9246216fd4222b55!2zS8Okw6RudMO2cGlpcmkgMiwgMDIyMTAgRXNwb28sINCk0LjQvdC70Y_QvdC00LjRjw!5e0!3m2!1sru!2sru!4v1721572938425!5m2!1sru!2sru" ></iframe>
-        </div>
+    <div class="wrapper">
+      <div class="navbar-logo header__logo">
+        <a class="navbar-brand" href="../pages/About.html">
+          <img class="navbar-brand__logo" src="../images/section-hero-logo.png" alt="logo">
+        </a>
       </div>
-    </section>
-    <!-- КОНЕЦ СЕКЦИИ “Контакты” Anastasia -->
+    </div>
+  </header>
+  
+  <main class="section-contacts">
+    <div class="section-contacts__conteiner">
+      <h1 class="section-contacts__title">
+        Контакты
+      </h1>
+      <p class="section-contacts__subtitle">
+        Если у Вас возникли вопросы, свяжитесь с нами любым удобным для Вас способом:
+      </p>
+      <div class="section-contacts__contacts">
+        <a href="https://t.me/Razhatawka">
+          <img class="section-contacts__logo" src="../images/telegram.png" alt="logo telegram">
+          Telegram
+        </a>
+        <a href="https://wa.me/358449774378">
+          <img class="section-contacts__logo" src="../images/whatsapp.png" alt="logo whatsapp">
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/lava_espoo?igsh=dGVuY2o0aGRwb2R2&utm_source=qr">
+          <img class="section-contacts__logo" src="../images/insta.png" alt="logo instagram">
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61560395152406">
+          <img class="section-contacts__logo" src="../images/face.png" alt="logo facebook">
+          Facebook
+        </a>
+        <a href="mailto:lava.espoo.studio@gmail.com">
+          <img class="section-contacts__logo" src="../images/mail.png" alt="logo mail">
+          Почта
+        </a>
+        <a href="tel:+358449774378">
+          <img class="section-contacts__logo" src="../images/phone.png" alt="logo phone">
+          Телефон
+        </a>
+      </div>
+      <div class="section-contacts__map-conteiner">
+        <p class="section-contacts__map-conteiner__paragraph">
+          Мы находимся по адресу: Kääntöpiiri 2, Espoo
+        </p>
+        <iframe class="section-contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.5152124044596!2d24.720922977106504!3d60.172204075033406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df4f0941b456b%3A0x9246216fd4222b55!2zS8Okw6RudMO2cGlpcmkgMiwgMDIyMTAgRXNwb28sINCk0LjQvdC70Y_QvdC00LjRjw!5e0!3m2!1sru!2sru!4v1721572938425!5m2!1sru!2sru">
+        </iframe>
+      </div>
+      <a data-title="Напишите нам" href="https://wa.me/358449774378" class="section-hero__watsapp" target="_blank">
+        <img src="../images/whatsapp.png" alt="watsapp-img" class="section-hero__watsapp-img">
+      </a>
+      <a href="#top" class="section-hero__scroll-top-btn">
+        <img src="../images/scroll-top.png" alt="scroll-top-img">
+      </a>
+    </div>
   </main>
 
-  <!-- FOOTER Анна -->
   <footer>
-    <div class="footer__div">
-      <img src="../images/section-hero-logo.png" class="footer__logo">
-      <div class="footer__adress">
+    <div class="footer-container">
+      <img src="../images/section-hero-logo.png" class="footer-container__logo" alt="logo">
+      <div class="footer-container__adress">
         Kääntopiiri 2, Espoo
       </div>
-      <div class="footer__contacts">
-      <a href="https://www.instagram.com/lava_espoo/?igsh=dGVuY2o0aGRwb2R2&utm_source=qr"><img class="footer__contact" src="../images/insta.png" alt="instagram"></a>
-      <a href="https://www.facebook.com/people/Lava-dance-music-education/61560395152406/"><img class="footer__contact" src="../images/face.png" alt="facebook"></a>
-      <a href="tel:+35844974378"><img class="footer__contact" src="../images/phone.png" alt="phone number"></a>
-      <a href="tel:+35844974378"><img class="footer__contact" src="../images/telegram.png" alt="telegram"></a>
-      <a href="tel:+35844974378"><img class="footer__contact" src="../images/whatsapp.png" alt="whatsapp"></a>
+      <div class="footer-container__contacts">
+        <a href="https://www.instagram.com/lava_espoo/?igsh=dGVuY2o0aGRwb2R2&utm_source=qr">
+          <img class="footer-container__contact-img" src="../images/insta.png" alt="instagram">
+        </a>
+        <a href="https://www.facebook.com/people/Lava-dance-music-education/61560395152406/">
+          <img class="footer-container__contact-img" src="../images/face.png" alt="facebook">
+        </a>
+        <a href="tel:+35844974378">
+          <img class="footer-container__contact-img" src="../images/phone.png" alt="phone number">
+        </a>
+        <a href="https://t.me/Razhatawka">
+          <img class="footer-container__contact-img" src="../images/telegram.png" alt="telegram"></a>
+        <a href="tel:https://wa.me/358449774378">
+          <img class="footer-container__contact-img" src="../images/whatsapp.png" alt="whatsapp">
+        </a>
+      </div>
+      <a href="https://itgirlschool.com/" class="footer-container__link">©Сайт сделан IT Girl School</a>
     </div>
-  </div>
   </footer>
-  <!-- КОНЕЦ FOOTER Анна -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
