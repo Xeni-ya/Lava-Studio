@@ -25,7 +25,7 @@
   margin-right: 113px;
   }
 
-  .text_section-rules__text {
+  .section-rules__text {
     font-family: "Poiret One", sans-serif;
     color: $yellow;
     font-size: 20px;
@@ -35,9 +35,10 @@
     text-align: left;
   }
   
-  @media screen and (max-width: 1090px) {
-    .section-rules__title {
-      font-size: 4em;
+  @media screen and (max-width: 1080px) {
+    .title.section-rules__title {
+      font-size: 3.8em;
+      margin-left: 30px;
     }
   }
 
