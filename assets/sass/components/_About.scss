@@ -151,7 +151,7 @@
     }
   }
 
-  .section-hero__watsapp {
+  .section-gallery__watsapp {
     position: fixed;
     right: 20px;
     bottom: 100px;
@@ -193,7 +193,7 @@
   [data-title]:hover::after {
       opacity: 1; 
   }
-  .section-hero__watsapp-img {
+  .section-gallery__watsapp-img {
       width:50px;
       height:50px;
       @media screen and (max-width: 375px) {
@@ -202,7 +202,7 @@
       }
   }
 
-  .section-hero__scroll-top-btn {
+  .section-gallery__scroll-top-btn {
     position: fixed;
     left: 20px;
     bottom: 100px;
