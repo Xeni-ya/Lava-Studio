@@ -20,7 +20,7 @@
     }
 
     @media screen and (max-width: 375px) {
-      font-size: 2.4em;
+      font-size: 3.6em;
     }
   }
 
@@ -38,42 +38,11 @@
     justify-content: center;
   }
 
-  .section-price__base-title,
-  .section-price__group-title,
-  .section-price__single-title {
+  .section-price__base-title {
     display: flex;
-    padding-left: 1em;
-    padding-right: 1em;
     text-transform: none;
     justify-content: center;
-  }
-
-  .section-price__base,
-  .section-price__group,
-  .section-price__single {
-    @media screen and (max-width: 1024px) {
-      max-width: 510px;
-    }
-
-    @media screen and (max-width: 425px) {
-      max-width: 377px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 320px) {
-      max-width: 272px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 375px) {
-      max-width: 327px;
-      width: 100%;
-    }
+    margin-bottom: 20px;
   }
 
   @media (max-width: 794px) and (min-width: 565px) {
@@ -84,7 +53,41 @@
 
   @media (max-width: 566px) {
     .section-price__button-btn {
-      font-size: 1.5em;
+      font-size: 1.3em;
+      max-width: min-content;
+      height: auto;
+      padding: 10px;
+      margin: 10px;
     }
+  }
+  .section-price__scroll-top-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      right: 10px;
+      bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-price {
+    padding: 10px 10px;
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .subtitle {
+    font-size: 2em;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-price__h1 {
+    font-size: 3em;
   }
 }
