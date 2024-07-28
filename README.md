@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./readme-assets/fulllogo-readme.png">
+<img src="./assets/readme/fulllogo-readme.png">
 </div>
 
 <div align="center">
