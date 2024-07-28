@@ -41,6 +41,7 @@ a {
   letter-spacing: -2.56px;
   color: $yellow;
   background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -66,6 +67,7 @@ a {
   letter-spacing: -1.92px;
   color: $yellow;
   background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -200,7 +202,6 @@ a {
 //Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 %container {
   max-width: 1280px;
-  min-width: 320px;
   margin: 0 auto;
   padding: 0 32px;
 
