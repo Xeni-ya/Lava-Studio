@@ -69,6 +69,11 @@
         line-height: 32px;
     }
 
+    @media screen and (max-width: 666px) {
+        grid-template-columns: repeat(3,90px);
+        gap: 3%;
+    }
+
     @media screen and (max-width: 426px) {
         font-size: 1.4em;
         gap: 1%;
@@ -145,12 +150,30 @@
         width: 800px;
     }
 
+    
+    @media screen and (max-width: 860px) {
+        width: 700px;
+    }
+
     @media screen and (max-width: 768px) {
         width: 600px;
     }
 
+    @media screen and (max-width: 666px) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: 575px) {
+        width: 450px;
+    }
+
+    
+    @media screen and (max-width: 500px) {
+        width: 380px;
+    }
+
     @media screen and (max-width: 426px) {
-        width: 350px;
+        width: 330px;
         height: 200px;
     }
 
