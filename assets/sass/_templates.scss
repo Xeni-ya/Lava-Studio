@@ -41,6 +41,7 @@ a {
   letter-spacing: -2.56px;
   color: $yellow;
   background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -66,6 +67,7 @@ a {
   letter-spacing: -1.92px;
   color: $yellow;
   background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -144,45 +146,6 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
 
-  .button:before, .button:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    box-sizing: border-box;
-  }
-  .button:before {
-    bottom: 0;
-    left: 0;
-    border-left: 1px solid $yellow;
-    border-top: 1px solid $yellow;
-    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-  }
-  .button:after {
-    top: 0;
-    right: 0;
-    border-right: 1px solid $yellow;
-    border-bottom: 1px solid $yellow;
-    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
-  }
-  .button:hover:before, 
-  .button:hover:after {
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-  }
-  .button:hover:before {
-    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
-  }
-  .button:hover:after {
-    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
-  }
-  .button:hover {
-    background: $grey;
-    color: $yellow;
-  }
-  
   @media screen and (max-width: 1024px) {
     max-width: 509px;
     width: 100%;
@@ -193,6 +156,44 @@ a {
     height: 59px;
   }
 }
+.button:before, .button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid $yellow;
+  border-top: 1px solid $yellow;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid $yellow;
+  border-bottom: 1px solid $yellow;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+.button:hover:before, 
+.button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.button:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.button:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+.button:hover {
+  background: $deepPurple;
+  color: $yellow;
+}
 
 //==================Конец Кнопки==================//
 
@@ -201,7 +202,6 @@ a {
 //Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 %container {
   max-width: 1280px;
-  min-width: 320px;
   margin: 0 auto;
   padding: 0 32px;
 

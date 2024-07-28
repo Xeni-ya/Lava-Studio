@@ -568,6 +568,81 @@ a {
   }
 }
 
+.section-gallery__watsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  .section-gallery__watsapp {
+    right: 10px;
+    bottom: 20px;
+  }
+}
+
+[data-title]::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 60px;
+  left: -100px;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  color: #E4B548;
+  background-color: rgba(56, 10, 77, 0.8901960784);
+  border: 1px solid #E4B548;
+  min-block-size: max-content;
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+  padding: 0.5em;
+}
+@media screen and (max-width: 768px) {
+  [data-title]::after {
+    font-size: 1.8em;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 375px) {
+  [data-title]::after {
+    bottom: 50px;
+    left: -30px;
+    font-size: 1em;
+    line-height: 28px;
+    letter-spacing: -1px;
+  }
+}
+
+[data-title]:hover::after {
+  opacity: 1;
+}
+
+.section-gallery__watsapp-img {
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 375px) {
+  .section-gallery__watsapp-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.section-gallery__scroll-top-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 100px;
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  .section-gallery__scroll-top-btn {
+    right: 10px;
+    bottom: 20px;
+  }
+}
+
 .header__container {
   width: 100%;
   max-width: 100%;

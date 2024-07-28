@@ -708,14 +708,14 @@ a {
   }
 }
 
-.section-hero__watsapp {
+.section-contacts__watsapp {
   position: fixed;
   right: 20px;
   bottom: 100px;
   cursor: pointer;
 }
 @media screen and (max-width: 375px) {
-  .section-hero__watsapp {
+  .section-contacts__watsapp {
     right: 10px;
     bottom: 20px;
   }
@@ -759,25 +759,25 @@ a {
   opacity: 1;
 }
 
-.section-hero__watsapp-img {
+.section-contacts__watsapp-img {
   width: 50px;
   height: 50px;
 }
 @media screen and (max-width: 375px) {
-  .section-hero__watsapp-img {
+  .section-contacts__watsapp-img {
     width: 40px;
     height: 40px;
   }
 }
 
-.section-hero__scroll-top-btn {
+.section-contacts__scroll-top-btn {
   position: fixed;
   left: 20px;
   bottom: 100px;
   cursor: pointer;
 }
 @media screen and (max-width: 375px) {
-  .section-hero__scroll-top-btn {
+  .section-contacts__scroll-top-btn {
     right: 10px;
     bottom: 20px;
   }
@@ -1021,7 +1021,7 @@ a {
 }
 
 .footer-container__link {
-  color: #9000d2;
+  color: #ffdc12;
   font-size: 1.5em;
 }
 
