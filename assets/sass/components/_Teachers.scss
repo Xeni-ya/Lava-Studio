@@ -1,7 +1,7 @@
 // "  sass --watch assets/sass/teachers.scss assets/styles/style-teachers.css  "
 // команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
 
-.section_teachers{
+.section-teachers{
   @extend %container;
   background-color: $deepPurple;
   
@@ -16,42 +16,42 @@
     font-weight: 400;
     line-height: 50px;
     background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .teachers__title{
+  .teachers-title{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
     gap: 24px;
     margin-bottom: 44px;
   
   }
-  .teachers_wrapper{
+  .teachers-title__wrapper{
     display: flex;
     flex-direction: column;
   }
   
-  .teachers_foto{
-    display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  .teachers-title__foto{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
   }
   
-  .subtitle_teachers_name {
+  .teachers-title__name {
     font-family: "Poiret One", sans-serif;
     color: $yellow;
-    display: flex;
     font-size: 35px;
     font-weight: 500;
-    justify-content: center;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
+    min-height: 85px;
   }
   
-  .teachers_specification_text{
+  .teachers-title__specification-text{
     font-family: "Poiret One", sans-serif;
     color: $yellow;
     font-size: 20px;
@@ -61,6 +61,7 @@
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
   }
 
   @media screen and (max-width: 1116px) {
@@ -71,11 +72,11 @@
 
   @media screen and (max-width: 375px) {
     .teachers_foto {
-    margin-left: 5 px;
+    margin-left: 5px;
     margin-right: 10px;
   } 
 }
-.section-hero__watsapp {
+.section-teachers__watsapp {
   position: fixed;
   right: 20px;
   bottom: 100px;
@@ -117,7 +118,7 @@
 [data-title]:hover::after {
     opacity: 1; 
 }
-.section-hero__watsapp-img {
+.section-teachers__watsapp-img {
     width:50px;
     height:50px;
     @media screen and (max-width: 375px) {
@@ -126,7 +127,7 @@
     }
 }
 
-.section-hero__scroll-top-btn {
+.section-teachers__scroll-top-btn {
   position: fixed;
   left: 20px;
   bottom: 100px;

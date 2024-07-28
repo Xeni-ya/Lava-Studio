@@ -72,6 +72,7 @@
 }
 .section-courses__program-button {
     text-align:center;
+    padding: 20px 0;
 }
 .section-courses__watsapp {
     position:fixed;
@@ -130,7 +131,7 @@
     cursor: pointer;
 
     @media screen and (max-width: 375px) {
-      right:10px;
-      bottom:20px;
+        right:10px;
+        bottom:20px;
     }
 }
