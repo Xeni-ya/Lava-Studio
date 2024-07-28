@@ -1,6 +1,3 @@
-// "  sass --watch assets/sass/Rules.scss assets/styles/style-rules.css  "
-// команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-
 .section-rules {
   @extend %container;
   background-color: $deepPurple;

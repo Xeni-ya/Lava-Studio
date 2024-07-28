@@ -1,8 +1,5 @@
-// "  sass --watch assets/sass/about.scss assets/styles/style-about.css  "
-// команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-
 .section-hero {
-  margin-top: 124px;
+  margin-top: 32px;
   
   .section-hero__container {
     @extend %container;

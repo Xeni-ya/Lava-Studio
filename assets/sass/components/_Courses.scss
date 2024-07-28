@@ -1,6 +1,3 @@
-// "  sass --watch assets/sass/Courses.scss assets/styles/style-courses.css  "
-// команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-
 .section-courses {
     @extend %container;
     display:flex;

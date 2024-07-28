@@ -1,6 +1,3 @@
-// "  sass --watch assets/sass/Contacts.scss assets/styles/style-contacts.css  "
-// команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-
 .section-contacts{
     @extend %container;
     margin-top: 32px;
