@@ -4,8 +4,9 @@
 
 <div align="center">
 <img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlsschool-violet">
+</div>
 
-## About the project
+<a href="https://xeni-ya.github.io/Lava-Studio/">Перейти по ссылке</a>
 
 ---
 
