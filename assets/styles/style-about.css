@@ -349,6 +349,7 @@ a {
   letter-spacing: -2.56px;
   color: #ffdc12;
   background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -377,6 +378,7 @@ a {
   letter-spacing: -1.92px;
   color: #ffdc12;
   background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -513,7 +515,6 @@ a {
 
 .section-link, .section-hero .section-hero__container {
   max-width: 1280px;
-  min-width: 320px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -524,7 +525,7 @@ a {
 }
 
 .section-hero {
-  margin-top: 124px;
+  margin-top: 32px;
 }
 .section-hero .section-hero__container {
   display: grid;

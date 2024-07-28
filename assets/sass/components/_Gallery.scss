@@ -1,6 +1,3 @@
-// "  sass --watch assets/sass/Gallery.scss assets/styles/style-gallery.css  "
-// команда для быстрой вставки в терминал - запускает компиляцию кода SASS в CSS, терминал должен оставаться открытым
-
 .section-gallery {
     @extend %container;
     margin-top: 32px;
