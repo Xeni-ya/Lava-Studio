@@ -31,7 +31,7 @@
   // в 1 строку
   .section-schedule__calendar-timeline {
     display: grid;
-    grid-template-rows: repeat(12, 180px);
+    grid-template-rows: repeat(12, 220px);
     color: #ffdc12;
   }
 
@@ -61,7 +61,7 @@
 
   .events {
     display: grid;
-    grid-template-rows: repeat(12, 180px);
+    grid-template-rows: repeat(12, 220px);
     // grid-template-rows: repeat(12, minmax(180px, 1fr));
     border-radius: 5px;
   }
@@ -164,7 +164,7 @@
   }
 
   .titles {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 20px;
     letter-spacing: 0px;
     color: black;
@@ -320,6 +320,28 @@
     transform: scale(1.1);
   }
 
+  .event__block-reading {
+    background: #94b007;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .event__block-reading:hover {
+    transform: scale(1.1);
+  }
+
+  .event__block-HipHop {
+    background: #30f304;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .event__block-reading:hover {
+    transform: scale(1.1);
+  }
+
   // Global / Etc
   body {
     font-family: "Poiret One", sans-serif;
@@ -361,7 +383,7 @@
 
     .section-schedule__calendar-timeline2 {
       display: grid;
-      grid-template-rows: repeat(26, 180px);
+      grid-template-rows: repeat(26, 220px);
       color: #ffdc12;
     }
   }
@@ -382,7 +404,7 @@
 
     .section-schedule__calendar-timeline3 {
       display: grid;
-      grid-template-rows: repeat(39, 180px);
+      grid-template-rows: repeat(39, 220px);
       color: #ffdc12;
     }
 
@@ -400,7 +422,7 @@
 
     .section-schedule__calendar-timeline4 {
       display: grid;
-      grid-template-rows: repeat(78, 180px);
+      grid-template-rows: repeat(78, 220px);
       color: #ffdc12;
     }
 

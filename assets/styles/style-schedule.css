@@ -349,6 +349,7 @@ a {
   letter-spacing: -2.56px;
   color: #ffdc12;
   background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -377,6 +378,7 @@ a {
   letter-spacing: -1.92px;
   color: #ffdc12;
   background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -513,7 +515,6 @@ a {
 
 .section-link, .section-schedule {
   max-width: 1280px;
-  min-width: 320px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -552,7 +553,7 @@ a {
 }
 .section-schedule .section-schedule__calendar-timeline {
   display: grid;
-  grid-template-rows: repeat(12, 180px);
+  grid-template-rows: repeat(12, 220px);
   color: #ffdc12;
 }
 .section-schedule .section-schedule__calendar-timeline2,
@@ -576,7 +577,7 @@ a {
 }
 .section-schedule .events {
   display: grid;
-  grid-template-rows: repeat(12, 180px);
+  grid-template-rows: repeat(12, 220px);
   border-radius: 5px;
 }
 .section-schedule .start-1 {
@@ -652,7 +653,7 @@ a {
   grid-row-end: 13;
 }
 .section-schedule .titles {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 20px;
   letter-spacing: 0px;
   color: black;
@@ -780,6 +781,24 @@ a {
 .section-schedule .event__block-mama:hover {
   transform: scale(1.1);
 }
+.section-schedule .event__block-reading {
+  background: #94b007;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+.section-schedule .event__block-reading:hover {
+  transform: scale(1.1);
+}
+.section-schedule .event__block-HipHop {
+  background: #30f304;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+.section-schedule .event__block-reading:hover {
+  transform: scale(1.1);
+}
 .section-schedule body {
   font-family: "Poiret One", sans-serif;
 }
@@ -813,7 +832,7 @@ a {
   }
   .section-schedule .section-schedule__calendar-timeline2 {
     display: grid;
-    grid-template-rows: repeat(26, 180px);
+    grid-template-rows: repeat(26, 220px);
     color: #ffdc12;
   }
 }
@@ -831,7 +850,7 @@ a {
   }
   .section-schedule .section-schedule__calendar-timeline3 {
     display: grid;
-    grid-template-rows: repeat(39, 180px);
+    grid-template-rows: repeat(39, 220px);
     color: #ffdc12;
   }
   .section-schedule .section-schedule__button-btn {
@@ -846,7 +865,7 @@ a {
   }
   .section-schedule .section-schedule__calendar-timeline4 {
     display: grid;
-    grid-template-rows: repeat(78, 180px);
+    grid-template-rows: repeat(78, 220px);
     color: #ffdc12;
   }
   .section-schedule .section-schedule__button-btn {
