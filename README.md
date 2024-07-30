@@ -18,7 +18,7 @@ This is an educational project made by students of the #itgirlsschool.
 
 ## About the project
 
-Veggieboost implemented on Sass preprocessor. In the project were used the following technologies:
+The site is implemented on Sass preprocessor. In the project were used the following technologies:
 
 - Flexbox
 - CSS Grid Layout
