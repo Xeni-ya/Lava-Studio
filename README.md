@@ -1,14 +1,15 @@
 <div align="center">
-<img src="./assets/readme/fulllogo-readme.png">
-</div>
 
-<div align="center">
+[Lava-Studio](https://xeni-ya.github.io/Lava-Studio/)
+
 <img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlsschool-violet">
-</div>
-
-<a href="https://xeni-ya.github.io/Lava-Studio/">Перейти по ссылке</a>
+<img alt="Static Badge" src="https://img.shields.io/badge/Dart%20Sass-1.77.8-purple">
+<img alt="Static Badge" src="https://img.shields.io/badge/SCSS-70.8%25-yellow">
 
 ---
+
+<img src="./assets/readme/fulllogo-readme.png">
+</div>
 
 ## Description
 
@@ -22,7 +23,29 @@ Veggieboost implemented on Sass preprocessor. In the project were used the follo
 
 - Flexbox
 - CSS Grid Layout
+- Bootstrap
 
 The project has animation for hovering the cursor over buttons and product cards.
 
 Also it has working navigation through page sections.
+
+## To do
+
+- [x] Modern design
+- [x] Adaptive layout
+- [x] Device formats: for phone to a greater extent+ for computer and tablet
+- [x] Easy navigation and intuitive structure
+
+## The project team
+
+[AnnaSilverIT](https://github.com/AnnaSilverIT) - header and footer
+
+[Xeni-ya](https://github.com/Xeni-ya) - page index.html and the "About the Studio” page, the "Certificates" page
+
+[Glazunovatomara](https://github.com/Glazunovatomara) - the "Courses" page
+
+[Elena Petukhova](https://github.com/ElenLen) - the "Schedule" page, the "Price List" page
+
+[AlbinaBelaja](https://github.com/AlbinaBelaja) - the "Teachers" page and the "Rules" page
+
+[Anastasiya](https://github.com/nastyaerma) - the “Gallery” page, the "Contacts” page
