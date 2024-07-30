@@ -25,9 +25,9 @@ The site is implemented on Sass preprocessor. In the project were used the follo
 - CSS Grid Layout
 - Bootstrap
 
-The project has animation for hovering the cursor over buttons and product cards.
+The project has animation for hovering the cursor over buttons
 
-Also it has working navigation through page sections.
+Also it has working navigation through page sections
 
 ## To do
 
