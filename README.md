@@ -29,6 +29,10 @@ The project has animation for hovering the cursor over buttons
 
 Also it has working navigation through page sections
 
+For the convenience of users, a button for communication via whatsapp and an "up" button are implemented:
+
+<img src="./assets/readme/button-readme.jpg">
+
 ## To do
 
 - [x] Modern design
