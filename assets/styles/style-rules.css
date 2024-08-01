@@ -622,11 +622,15 @@ a {
   left: 20px;
   bottom: 100px;
   cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
 @media screen and (max-width: 375px) {
   .section-rules .section-rules__scroll-top-btn {
     right: 10px;
     bottom: 20px;
+    width: 40px;
+    height: 40px;
   }
 }
 
