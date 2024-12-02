@@ -53,3 +53,5 @@ For the convenience of users, a button for communication via whatsapp and an "up
 [AlbinaBelaja](https://github.com/AlbinaBelaja) - the "Teachers" page and the "Rules" page
 
 [Anastasiya](https://github.com/nastyaerma) - the “Gallery” page, the "Contacts” page
+
+[![Contributors](https://contrib.rocks/image?repo=xeni-ya/Lava-Studio)](https://github.com/xeni-ya/Lava-Studi/graphs/contributors)
