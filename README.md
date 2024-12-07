@@ -1,57 +1,62 @@
 <div align="center">
 
-[Lava-Studio](https://xeni-ya.github.io/Lava-Studio/)
+# Lava-Studio
 
 <img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlsschool-violet">
 <img alt="Static Badge" src="https://img.shields.io/badge/Dart%20Sass-1.77.8-purple">
 <img alt="Static Badge" src="https://img.shields.io/badge/SCSS-70.8%25-yellow">
 
----
-
 <img src="./assets/readme/fulllogo-readme.png">
 </div>
 
-## Description
+## Описание
 
-**A responsive and adaptive** landing page for a creative studio.
+Адаптивный многостраничный сайт для творческой студии.
+Цель сайта — привлечь новых клиентов и увеличить доход студии.
 
-This is an educational project made by students of the #itgirlsschool.
+Сайт, созданный на основе ранее разработанного [сайта](https://lava-espoo.com/) на конструкторе
 
-## About the project
+Это образовательный проект, созданный ученицами школы #itgirlschool.
 
-The site is implemented on Sass preprocessor. In the project were used the following technologies:
+## О проекте
+
+Сайт реализован на препроцессоре Sass. В проекте были использованы следующие технологии:
 
 - Flexbox
 - CSS Grid Layout
 - Bootstrap
 
-The project has animation for hovering the cursor over buttons
+В проекте есть анимация наведения курсора на кнопки
 
-Also it has working navigation through page sections
+Также в нем есть рабочая навигация по разделам страницы
 
-For the convenience of users, a button for communication via whatsapp and an "up" button are implemented:
+Для удобства пользователей реализована кнопка для связи через WhatsApp и кнопка "вверх":
 
 <img src="./assets/readme/button-readme.jpg">
 
-## To do
+## Что сделали:
 
-- [x] Modern design
-- [x] Adaptive layout
-- [x] Device formats: for phone to a greater extent+ for computer and tablet
-- [x] Easy navigation and intuitive structure
+- [x] Современный дизайн
+- [x] Адаптивную валидную кроссбраузерную верстку
+- [x] Форматы устройств: в большей степени для телефона, в то числе для компьютера и планшета
+- [x] Простая навигация и интуитивно понятная структура
 
-## The project team
+## Команда проекта
+
+[![Contributors](https://contrib.rocks/image?repo=xeni-ya/Lava-Studio)](https://github.com/xeni-ya/Lava-Studio/graphs/contributors)
 
 [AnnaSilverIT](https://github.com/AnnaSilverIT) - header and footer
 
-[Xeni-ya](https://github.com/Xeni-ya) - page index.html and the "About the Studio” page, the "Certificates" page
+[Xeni-ya](https://github.com/Xeni-ya) - страница index.html и страница "О студии”, страница "Сертификаты"
 
-[Glazunovatomara](https://github.com/Glazunovatomara) - the "Courses" page
+[Glazunovatomara](https://github.com/Glazunovatomara) - страница "Курсы"
 
-[Elena Petukhova](https://github.com/ElenLen) - the "Schedule" page, the "Price List" page
+[Elena Petukhova](https://github.com/ElenLen) - страница "Расписание", страница "Прайс-лист"
 
-[AlbinaBelaja](https://github.com/AlbinaBelaja) - the "Teachers" page and the "Rules" page
+[AlbinaBelaja](https://github.com/AlbinaBelaja) - страница "Преподаватели" и страница "Правила"
 
-[Anastasiya](https://github.com/nastyaerma) - the “Gallery” page, the "Contacts” page
+[Anastasiya](https://github.com/nastyaerma) - страница “Галерея”, страница "Контакты”
 
-[![Contributors](https://contrib.rocks/image?repo=xeni-ya/Lava-Studio)](https://github.com/xeni-ya/Lava-Studi/graphs/contributors)
+## Результат:
+
+[Перейти по ссылке 👈 ](https://xeni-ya.github.io/Lava-Studio/)
